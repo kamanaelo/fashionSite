@@ -1,0 +1,15 @@
+mixin input(placeholder, style, type, btnText)
+    -
+        const blockName = 'input';
+        const blockAttributes = {
+            class: [blockName]
+        };
+
+    if(style)
+        each s in style.split(' ')
+            - blockAttributes.class.push(`${blockName}__${s}`)
+
+    .input__wrap 
+        input(type=`${type}`, placeholder=`${placeholder}`)&attributes(Object.assign({}, attributes, blockAttributes))
+        if(type==='email')
+            button(type='submit').input__button= btnText

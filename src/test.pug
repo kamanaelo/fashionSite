@@ -1,11 +1,13 @@
 doctype html
 html(lang="en")
     include ../src/blocks/button/button.pug
+    include ../src/blocks/input/input.pug
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
     body 
-        +button('button', 'filled', underline=false, 'some text')
+        //- +button('button', 'filled', underline=false, 'some text')
+        +input('some text', '', 'email', 'join')
         
