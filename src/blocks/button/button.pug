@@ -1,0 +1,21 @@
+mixin button(tag, style, underline, text) 
+    -
+        const blockName = 'button';
+        const blockAttributes = {
+            class: [blockName]
+        };
+        
+    if(style)
+        each s in style.split(' ')
+            - blockAttributes.class.push(`${blockName}__${s}`)
+    .button__wrap
+        if(underline)
+                span(class=`${blockName}__underline`)
+                    #{tag}&attributes(Object.assign({}, attributes, blockAttributes)) #{text}
+        else
+            #{tag}&attributes(Object.assign({}, attributes, blockAttributes)) #{text}
+        
+
+    
+    
+    
