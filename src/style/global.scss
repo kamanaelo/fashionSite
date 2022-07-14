@@ -1,0 +1,12 @@
+@import 'colors';
+@import 'vars';
+@import 'fonts';
+@import 'null';
+@import 'fontAwesome';
+
+@import '../blocks/button/button.scss';
+
+body{
+    font-size: 10px;
+    font-family: 'Poppins';
+}
