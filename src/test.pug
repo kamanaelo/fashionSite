@@ -2,6 +2,7 @@ doctype html
 html(lang="en")
     include ../src/blocks/button/button.pug
     include ../src/blocks/input/input.pug
+    include ../src/blocks/section-header/sectionHead.pug
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -9,5 +10,6 @@ html(lang="en")
         title Document
     body 
         //- +button('button', 'filled', underline=false, 'some text')
-        +input('some text', '', 'email', 'join')
+        //- +input('some text', '', 'email', 'join')
+        +sectionHead("women's fashion", "Shop our new arrivals from established brands")
         
