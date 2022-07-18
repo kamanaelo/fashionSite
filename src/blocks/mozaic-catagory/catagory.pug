@@ -1,0 +1,11 @@
+mixin catagory(imgPath1, imgPath2, imgPath3, imgPath4, catagoryName)
+    .mozaic__wrap
+        .mozaic__leftColumnWrap
+            img(src=imgPath1, alt="Some image").mozaic__top
+            .mozaic__midWrap
+                img(src=imgPath2, alt="Some image").mozaic__mid1
+                img(src=imgPath3, alt="Some image").mozaic__mid2
+        .mozaic__rightColumnWrap
+            img(src=imgPath4, alt="Some image").mozaic__right
+            +button('a', 'filled', underline=false, catagoryName).mozaic__button
+//- .mozaic__rightColumnWrap

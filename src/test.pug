@@ -4,6 +4,7 @@ html(lang="en")
     include ../src/blocks/input/input.pug
     include ../src/blocks/section-header/sectionHead.pug
     include ../src/blocks/card/card.pug
+    include ../src/blocks/mozaic-catagory/catagory.pug
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -13,9 +14,17 @@ html(lang="en")
         //- +button('button', 'filled', underline=false, 'some text')
         //- +input('some text', '', 'email', 'join')
         //- +sectionHead("women's fashion", "Shop our new arrivals from established brands")
-        +card(require('../src/img/womensFashion/women1.png'), 
-                'igure', 
-                'GREEN MUSCLE FIT POLO SHIRT',
-                '229.00',
-                sale=true,
-                '129.00')
+        //- +card(require('../src/img/womensFashion/women1.png'), 
+        //-         'igure', 
+        //-         'GREEN MUSCLE FIT POLO SHIRT',
+        //-         '229.00',
+        //-         sale=true,
+        //-         '129.00')
+
+        +catagory(
+                require('../src/img/catagory/catagory1.svg'),
+                require('../src/img/catagory/catagory2.svg'),
+                require('../src/img/catagory/catagory3.svg'),
+                require('../src/img/catagory/catagory4.svg'),
+                'catagory name'
+            )

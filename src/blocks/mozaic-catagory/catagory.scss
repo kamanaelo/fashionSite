@@ -1,0 +1,41 @@
+.mozaic{
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    &__leftColumnWrap{
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        margin-top: 0;
+        margin-right: 3rem;
+    }
+    &__top{
+        margin-bottom: 2.2rem;
+    }
+    &__mid1{
+        margin-right: 2.5rem;
+    }
+
+    &__rightColumnWrap{
+        top: 0;
+    }
+
+    &__right{
+        filter: brightness(50%);
+    }
+}
+
+.button{
+    &__wrap{
+        position: relative;
+        bottom: 5rem;
+        left: 2.8rem;
+    }
+    &__filled{
+        color: $fontMainColor;
+        background-color: $mainbackgroundColor;
+    }
+}
