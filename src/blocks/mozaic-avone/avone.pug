@@ -1,0 +1,8 @@
+mixin avone(imgPath1, imgPath2, imgPath3)
+    .avone__wrap 
+        .avone__leftcolumnWrap 
+            img(src=imgPath1, alt="Some image").avone__leftImg
+        .avone__rightColumnWrap 
+            img(src=imgPath2, alt="Some image").avone__backImg
+            img(src=imgPath3, alt="Some image").avone__frontImg
+            +button('a', 'text', underline=true, "show women's dress")

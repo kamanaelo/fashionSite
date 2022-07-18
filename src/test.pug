@@ -5,6 +5,7 @@ html(lang="en")
     include ../src/blocks/section-header/sectionHead.pug
     include ../src/blocks/card/card.pug
     include ../src/blocks/mozaic-catagory/catagory.pug
+    include ../src/blocks/mozaic-avone/avone.pug
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -21,10 +22,16 @@ html(lang="en")
         //-         sale=true,
         //-         '129.00')
 
-        +catagory(
-                require('../src/img/catagory/catagory1.svg'),
-                require('../src/img/catagory/catagory2.svg'),
-                require('../src/img/catagory/catagory3.svg'),
-                require('../src/img/catagory/catagory4.svg'),
-                'catagory name'
-            )
+        //- +catagory(
+        //-         require('../src/img/catagory/catagory1.svg'),
+        //-         require('../src/img/catagory/catagory2.svg'),
+        //-         require('../src/img/catagory/catagory3.svg'),
+        //-         require('../src/img/catagory/catagory4.svg'),
+        //-         'catagory name'
+        //-     )
+
+        +avone(
+            require('../src/img/avone/avone1.png'),
+            require('../src/img/avone/avone2.png'),
+            require('../src/img/womensFashion/women1.png')
+        )
