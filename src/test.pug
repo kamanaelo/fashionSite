@@ -6,6 +6,7 @@ html(lang="en")
     include ../src/blocks/card/card.pug
     include ../src/blocks/mozaic-catagory/catagory.pug
     include ../src/blocks/mozaic-avone/avone.pug
+    include ../src/blocks/hero-section/hero.pug
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -30,8 +31,16 @@ html(lang="en")
         //-         'catagory name'
         //-     )
 
-        +avone(
-            require('../src/img/avone/avone1.png'),
-            require('../src/img/avone/avone2.png'),
-            require('../src/img/womensFashion/women1.png')
-        )
+        //- +avone(
+        //-     require('../src/img/avone/avone1.png'),
+        //-     require('../src/img/avone/avone2.png'),
+        //-     require('../src/img/womensFashion/women1.png')
+        //- )
+
+        +heroSection(
+            require('../src/img/heroSection.png'),
+            'NEW TREND', 
+            'COLLUSION', 
+            "An exclusive selection of this season's trends.", 
+            'discover|shop now' 
+            )
