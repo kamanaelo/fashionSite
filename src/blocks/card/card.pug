@@ -1,0 +1,11 @@
+mixin card(imgPath, brandName, caption, price, sale, newPrice)
+    .card__wrap 
+        img(src=imgPath, alt=`${caption}`).card__img
+        p.card__brand= brandName
+        p.card__caption= caption
+        if(sale)
+            .card__priceBox
+                p.card__oldPrice= '$'+price
+                p.card__newPrice= '$'+newPrice
+        else    
+            p.card__price= '$'+price

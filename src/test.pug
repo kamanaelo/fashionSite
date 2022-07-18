@@ -3,13 +3,19 @@ html(lang="en")
     include ../src/blocks/button/button.pug
     include ../src/blocks/input/input.pug
     include ../src/blocks/section-header/sectionHead.pug
+    include ../src/blocks/card/card.pug
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
+        title Fashion site
     body 
         //- +button('button', 'filled', underline=false, 'some text')
         //- +input('some text', '', 'email', 'join')
-        +sectionHead("women's fashion", "Shop our new arrivals from established brands")
-        
+        //- +sectionHead("women's fashion", "Shop our new arrivals from established brands")
+        +card(require('../src/img/womensFashion/women1.png'), 
+                'igure', 
+                'GREEN MUSCLE FIT POLO SHIRT',
+                '229.00',
+                sale=true,
+                '129.00')

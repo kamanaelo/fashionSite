@@ -4,6 +4,8 @@ const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
+// const CopyPlugin = require('copy-webpack-plugin');
+
 
 // const isDev = process.env.Node_ENV === 'development';
 // const isProd = !isDev;
@@ -16,9 +18,10 @@ module.exports = {
     output:{
         path: path.resolve(__dirname, 'build'),
         filename: '[name].js',
+        // assetModuleFilename: 'build/.img/[name][hash][ext]',
         clean: true,
     },
-    devtool: 'source-map',
+    // devtool: 'source-map',
     devServer:{
         open: true,
         hot: true,
@@ -43,6 +46,10 @@ module.exports = {
                 test: /\.pug$/,
                 use: 'pug-loader'
             },
+            // {
+            //     test: /\.html$/,
+            //     use: "html-loader",
+            // },
             {
                 test: /\.(sa|sc|c)ss$/,
                 // use: ['style-loader', 'css-loader', 'sass-loader']
@@ -53,10 +60,9 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(?:png|gif|jpg|svg)$/i,
-                // loader: 'file-loader',
+                test: /\.(png|gif|jpg|svg)$/i,
                 type: 'asset/resource',
-                generator:{
+                generator: {
                     filename: '.img/[hash][ext]'
                 }
             },
