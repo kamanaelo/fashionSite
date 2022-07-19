@@ -1,0 +1,57 @@
+mixin footer(logoPath, caption, location, email, phoneNumber, shopItemList, helpItemList, aboutItemList)
+    footer.footer 
+        .footer__main 
+            .container
+                .footer__content
+                    .footer__leftSide
+                        .footer__logo 
+                            img(src=logoPath, alt="LOGO").footer__logo-img
+                        .footer__caption= caption 
+                        .footer__location 
+                            i.footer__location-icon 
+                            .footer__location-text= location
+                        .footer__contact 
+                            .footer__contact-email= email 
+                            .footer__contact-phone= phoneNumber
+                        .footer__icon
+                            a.footer__icon-fb
+                            a.footer__icon-inst
+                            a.footer__icon-twitter 
+                            a.footer__icon-linkedin
+                    .footer__rightSide 
+                        //- .footer__inputForm 
+                        form(action="#", method="get").footer__inputForm-form 
+                            .footer__inputForm-caption= 'recieve email updates'
+                            //- .footer__inputForm-input 
+                            +input(
+                                'Your Email Address',
+                                '',
+                                'email',
+                                'join'
+                            )
+                        .footer__infoBox 
+                            .footer__infoBox-column 
+                                .footer__infoBox-title= 'shop'
+                                ul.footer__infoBox-list
+                                    each item in shopItemList
+                                        li.footer__infoBox-item
+                                            a.button__text.footer__infoBox-link= item
+
+                            .footer__infoBox-column  
+                                .footer__infoBox-title= 'help'
+                                ul.footer__footer__infoBox-list
+                                    each item in helpItemList
+                                        li.footer__infoBox-item
+                                            a.button__text.footer__infoBox-link= item
+
+                            .footer__infoBox-column  
+                                .footer__infoBox-title= 'about'
+                                ul.footer__footer__infoBox-list
+                                    each item in aboutItemList
+                                        li.footer__infoBox-item
+                                            a.button__text.footer__infoBox-link= item
+
+        - const date = (new Date()).getFullYear()
+        .footer__bottom= 'Copyright © '+date+'. Your company name  All rights reserved'
+        
+                    

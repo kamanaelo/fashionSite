@@ -10,6 +10,7 @@ html(lang="en")
     include ../src/blocks/bottom-section/bottom.pug
     include ../src/blocks/background-image/bg.pug
     include ../src/blocks/header/header.pug
+    include ../src/blocks/footer/footer.pug
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -60,9 +61,29 @@ html(lang="en")
         //-     'hero',
         //-     require('../src/img/heroSection.png')
         //- )
+        //- -
+        //-     const itemList = ['home', 'shop', 'lookbook', 'features', 'pages', 'blog']
+        //- +header(
+        //-     require('../src/img/logo.svg'),
+        //-     itemList
+        //- )
         -
-            const itemList = ['home', 'shop', 'lookbook', 'features', 'pages', 'blog']
-        +header(
+            const caption = 'We earned a reputation of being good at what we do. Let us take your online shop to new dimension in success!';
+            const location = 'Comilla, Bangladesh 3500';
+            const email = 'kawsarahmed0210@gmail.com';
+            const phone = '01647470457';
+            const shopItemList = ['Shop', 'Collections', 'Outlet', 'Lookbook'];
+            const helpItemList = ['FAQ', 'Privecy Policy', 'Tearms and conditions', 'Return and Exchanges'];
+            const aboutItemList = ['Journal', 'Our Story', 'Contact', 'Store Location'];
+
+
+        +footer(
             require('../src/img/logo.svg'),
-            itemList
+            caption,
+            location,
+            email,
+            phone,
+            shopItemList,
+            helpItemList,
+            aboutItemList
         )

@@ -1,0 +1,119 @@
+.footer{
+    font-size: $mainFontSize;
+    font-weight: 400;
+    display: block;
+    max-height: 70rem;
+    background: $subBackgroundColor1;
+    padding-top: 11.5rem;
+    &__main{
+        padding-bottom: 10rem;
+    }
+    &__content{
+        display: flex;
+    }
+    &__leftSide, &__rightSide{
+        flex: 1 1 50%;
+    }
+    &__logo{
+        max-width: 15rem;
+        max-height: 4rem;
+        margin-bottom: 1.7rem;
+    }
+    &__caption{
+        max-width: 41rem;
+        margin-bottom: 4rem;
+    }
+    &__location{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.6rem;
+        &-icon{
+            @include fa($fa-compass, black, 1.5rem);
+            margin-right: 2.6rem;
+        }
+    }
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        &-email{
+            text-decoration: underline;
+            margin-bottom: 0.7rem;
+        }
+        &-phone{
+            margin-bottom: 1.6rem;
+        }
+    }
+    
+    &__icon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        &-fb{
+            @include fa($fa-facebook-square, black, 1.7rem);
+            margin-right: 1.7rem;
+        }
+        &-inst{
+            @include fa($fa-instagram, black, 1.7rem);
+            margin-right: 1.7rem;
+        }
+        &-twitter{
+            @include fa($fa-twitter, black, 1.7rem);
+            margin-right: 1.7rem;
+        }
+        &-linkedin{
+            @include fa($fa-linkedin-square, black, 1.7rem);
+        }
+    }
+    &__inputForm{
+        &-form{
+            margin-bottom: 7rem;
+        }
+        &-caption{
+            text-transform: uppercase;
+            font-size: $h1FontSize;
+            font-weight: 700;
+            margin-bottom: 2.4rem;
+        }
+    }
+    &__infoBox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &-column:not(:last-child) {
+            margin-right: 8.8rem;
+        }
+        &-title{
+            text-transform: uppercase;
+            font-size: $h2FontSize;
+            font-weight: 600;
+            margin-bottom: 2.7rem;
+        }
+        &-item{
+            margin-bottom: 2rem;
+        }
+    }
+    &__bottom{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        max-height: 9.3rem;
+        padding: 3.5rem 0;
+        background-color: $subBAckgroundColor2;
+        color: $fontMainColor;
+        font-size: $mainFontSize;
+        font-weight: 400;
+    }
+}
+.input{
+    flex: 0 1 100%;
+    &__wrap{
+        width: 95%;
+        height: 4.5rem;
+        align-items: center;
+    }
+    &__button{
+        flex: 0 1 100%;
+    }
+}
