@@ -9,7 +9,7 @@ html(lang="en")
     include ../src/blocks/hero-section/hero.pug
     include ../src/blocks/bottom-section/bottom.pug
     include ../src/blocks/background-image/bg.pug
-    
+
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -40,21 +40,21 @@ html(lang="en")
         //-     require('../src/img/womensFashion/women1.png')
         //- )
 
-        +heroSection(
-            require('../src/img/heroSection.png'),
-            'NEW TREND', 
-            'COLLUSION', 
-            "An exclusive selection of this season's trends.", 
-            'discover|shop now' 
-            )
+        //- +heroSection(
+        //-     require('../src/img/heroSection.png'),
+        //-     'NEW TREND', 
+        //-     'COLLUSION', 
+        //-     "An exclusive selection of this season's trends.", 
+        //-     'discover|shop now' 
+        //-     )
 
-        //- +bottomSection(
-        //-     require('../src/img/tachen.png'),
-        //-     'OWN THE DAY',
-        //-     'tachen',
-        //-     '',
-        //-     'shop collection'
-        //- )
+        +bottomSection(
+            require('../src/img/tachen.png'),
+            'OWN THE DAY',
+            'tachen 19',
+            '',
+            'shop collection'
+        )
 
         //- +backgroundImg(
         //-     'hero',

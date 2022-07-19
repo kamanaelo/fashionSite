@@ -1,0 +1,19 @@
+mixin bottomSection(backgroundImg, subtitle, mainTitle, caption, buttonText)
+    .bottom
+        +backgroundImg(
+            'bottom',
+            `${backgroundImg}`
+        )
+        //- .bottom__bg     
+        //-     img(src=backgroundImg, alt="some background image").bottom__bg-img
+        .bottom__wrap 
+            .bottom__content 
+                .bottom__textBox.textBox 
+                    .bottom__textBox-subtitle= subtitle
+                    .bottom__textBox-title= mainTitle
+                    if(caption)
+                    .bottom__caption= caption
+                    if(buttonText)
+                        .bottom____textBox-button 
+                            each text in buttonText.split('|')
+                                a.button.button__filled= text

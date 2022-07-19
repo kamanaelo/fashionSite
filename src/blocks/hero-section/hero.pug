@@ -1,7 +1,9 @@
 mixin heroSection(backgroundImg, subtitle, mainTitle, caption, buttonText)
     main.hero 
-        .hero__bg 
-            img(src=backgroundImg, alt="background image").hero__bg-img
+        +backgroundImg(
+            'hero',
+            `${backgroundImg}`
+        )
         .hero__wrap 
             .hero__content
                 .hero__textBox.textBox
