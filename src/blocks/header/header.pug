@@ -1,0 +1,18 @@
+mixin header(logoPath, headerItemsList)
+    header.header
+        .container
+            .header__burger 
+            .header__wrap 
+                .header__content 
+                    .header__content-logo 
+                        img(src=logoPath, alt="LOGO")
+                    .header__content-menu 
+                        ul.header__content-list
+                            each item in headerItemsList
+                                li.header__content-item
+                                    a.button__text= item
+                                    //- +button('a', text, false, `${item}`)
+                    .header__content-iconBlock 
+                        a.header__icon-search
+                        a.header__icon-hearth
+                        a.header__icon-shop

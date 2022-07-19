@@ -13,6 +13,7 @@
 @import '../blocks/background-image/bg.scss';
 @import '../blocks/hero-section/hero.scss';
 @import '../blocks/bottom-section/bottom.scss';
+@import '../blocks/header/header.scss';
 
 
 html, body{
@@ -20,3 +21,9 @@ html, body{
     font-family: 'Poppins';
 }
 
+.container{
+    height: 100%;
+    max-width: 1160px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

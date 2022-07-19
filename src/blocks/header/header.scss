@@ -1,0 +1,82 @@
+.header{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-height: 8rem;
+    background: $mainbackgroundColor;
+    color: $fontMainColor;
+    border: 1px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &__wrap{
+        height: 100%;
+    }
+
+    &__content{
+        display: flex;
+        // justify-content:space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 113.8rem;
+        height: 100%;
+        margin: 0;
+
+        &-logo{
+            margin-right: 14rem;
+        }
+
+        &-menu{
+            color: $fontMainColor;
+            display: inline-flex;
+            width: 100%;
+        }
+        &-list{
+            margin: 0;
+            // margin-bottom: 400px;
+            width: 100%;
+            display: inline-flex;
+        }
+        &-item{
+            // position: absolute;
+            margin-right: 2.5rem;
+            color: $fontMainColor;
+            font-size: $h3FontSize;
+            font-weight: 400;
+            list-style: none;
+            text-transform: uppercase;
+            // z-index: 2;
+            &:last-child{
+                margin-right: 14rem;
+            }
+        }
+
+        &-iconBlock{
+            display: inline-flex;
+        }
+        
+    }
+    &__icon{
+        
+        &-search{
+            @include fa($fa-search, black, 1.8rem);
+            margin-right: 2.5rem;
+            cursor: pointer;
+        }
+        &-hearth{
+            @include fa($fa-heart-o, black, 1.8rem);
+            margin-right: 2.5rem;
+            cursor: pointer;
+        }
+        &-shop{
+            @include fa($fa-shopping-cart, black, 1.8rem);
+            // margin-right: 2.5rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.button__text{
+    cursor: pointer;
+}

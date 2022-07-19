@@ -9,7 +9,7 @@ html(lang="en")
     include ../src/blocks/hero-section/hero.pug
     include ../src/blocks/bottom-section/bottom.pug
     include ../src/blocks/background-image/bg.pug
-
+    include ../src/blocks/header/header.pug
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -48,15 +48,21 @@ html(lang="en")
         //-     'discover|shop now' 
         //-     )
 
-        +bottomSection(
-            require('../src/img/tachen.png'),
-            'OWN THE DAY',
-            'tachen 19',
-            '',
-            'shop collection'
-        )
+        //- +bottomSection(
+        //-     require('../src/img/tachen.png'),
+        //-     'OWN THE DAY',
+        //-     'tachen 19',
+        //-     '',
+        //-     'shop collection'
+        //- )
 
         //- +backgroundImg(
         //-     'hero',
         //-     require('../src/img/heroSection.png')
         //- )
+        -
+            const itemList = ['home', 'shop', 'lookbook', 'features', 'pages', 'blog']
+        +header(
+            require('../src/img/logo.svg'),
+            itemList
+        )
