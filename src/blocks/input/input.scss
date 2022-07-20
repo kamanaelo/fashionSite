@@ -27,5 +27,9 @@
         text-transform: uppercase;
         font-weight: 600;
         //padding: 1.1rem 2.3rem 1.1rem 0;
+        transition: 0.3s;
+        &:hover{
+            font-size: calc($mainFontSize + 0.3rem);
+        }
     }
 }

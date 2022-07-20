@@ -1,12 +1,19 @@
 mixin catagory(imgPath1, imgPath2, imgPath3, imgPath4, catagoryName)
     .mozaic__wrap
-        .mozaic__leftColumnWrap
-            img(src=imgPath1, alt="Some image").mozaic__top
-            .mozaic__midWrap
-                img(src=imgPath2, alt="Some image").mozaic__mid1
-                img(src=imgPath3, alt="Some image").mozaic__mid2
-        .mozaic__rightColumnWrap
-            img(src=imgPath4, alt="Some image").mozaic__right
-            .mozaic__rightColumnWrap-button
-                +button('a', 'filled filled-white', underline=false, catagoryName)
+        .mozaic__item.mozaic__item-top
+            img(src=imgPath1, alt="Some image").mozaic__top.img.mozaic__img
+            +button('a', 'filled filled-white mozaic', catagoryName)
+            .mozaic__item-bottom
+                .mozaic__item-bottom
+                    .mozaic__item-bottomLeft
+                        img(src=imgPath2, alt="Some image").img.mozaic__img.mozaic__img-left
+                        +button('a', 'filled filled-white mozaic', catagoryName)
+                .mozaic__item-bottom
+                    .mozaic__item-bottomRigth
+                        img(src=imgPath3, alt="Some image").mozaic__img.img
+                        +button('a', 'filled filled-white mozaic', catagoryName)
+        .mozaic__item.mozaic__item-big
+            img(src=imgPath4, alt="Some image").mozaic__right.img.mozaic__img
+            //- .mozaic__rightColumnWrap-button
+            +button('a', 'filled filled-white mozaic', catagoryName)
 //- .mozaic__rightColumnWrap

@@ -17,32 +17,23 @@
         margin-bottom: 3.8rem;
     }
 
-
-    &__brand{
-        width: 2.2rem;
-        line-height: 2.2rem;
-        text-transform: uppercase;
-        margin-bottom: 0.3rem;
-    }
-
-    &__caption{
-        // display: block;
-        // align-items: baseline;
+    &__link{
         width: 100%;
         line-height: 2.2rem;
-        text-transform: uppercase;
-        font-weight: 600;
         margin-bottom: 0.3rem;
+        text-decoration: none;
+        color: $fontMainColor;
+        text-transform: uppercase;
+    }
+    &__caption{
+        font-weight: 600;
     }
 
     &__priceBox{
         display: inline-flex;
-        width: 2.2rem;
+        // min-width: 2.2rem;
+        width: 100%;
         line-height: 2.2rem;
-        // flex-direction: column;
-        // // justify-content: space-between;
-        // justify-content: space-around;
-        // // align-items: baseline;
     }
 
     &__oldPrice{

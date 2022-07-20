@@ -1,8 +1,8 @@
 mixin card(imgPath, brandName, caption, price, sale, newPrice)
     .card__wrap 
-        img(src=imgPath, alt=`${caption}`).card__img
-        p.card__brand= brandName
-        p.card__caption= caption
+        img(src=imgPath, alt=`${caption}`).img.card__img
+        a(href="#").card__link.card__brand= brandName
+        a(href="#").card__link.card__caption= caption
         if(sale)
             .card__priceBox
                 p.card__oldPrice= '$'+price

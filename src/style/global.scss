@@ -39,6 +39,15 @@ html, body{
     margin: 6.5rem 0 11rem 0;
 }
 
+.img{
+    transition: 0.4s;
+    object-fit: cover;
+    &:hover{
+        filter: brightness(75%);
+        transform: scale(1.05);
+    }
+}
+
 // .catagorySection{
 
 // }

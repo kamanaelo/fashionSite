@@ -14,6 +14,6 @@ mixin heroSection(backgroundImg, subtitle, mainTitle, caption, buttonText)
                     if(buttonText)
                     .hero__textBox-button
                         each text in buttonText.split('|')
-                            a.button.button__filled= text
+                            a.button.button__filled.button__filled-black= text
                             //- +button('a', 'filled', false, text)
 

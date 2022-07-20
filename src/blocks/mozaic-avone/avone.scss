@@ -12,6 +12,16 @@
     }
     &__leftImg{
         margin-top: 8.7rem;
+        transition: 0.4s;
+            &:hover{
+                transform: scale(1.05);
+            }
+    }
+    &__backImg{
+        transition: 0.4s;
+            &:hover{
+                transform: scale(1.05);
+            }
     }
     &__rightColumnWrap{
         display: flex;
@@ -23,21 +33,20 @@
             bottom: 11rem;
             left: 16rem;
         }
-    }
-    &__backImg{
-        z-index: -1;
-        // margin-bottom: 23.7rem;
+        &-after{
+            transition: 0.4s;
+            &:hover{
+                transform: scale(1.05);
+                text-decoration: underline;
+            }
+        }
     }
     &__frontImg{
-        // display: block;
         position: relative;
         width: 44%;
-        // top: 0;
-        z-index: 1;
-        height: 42%;
+        height: 90%;
+        // height: 42%;
         left: calc(55% + 3.8rem);
-        // left: 0;
-        // bottom: calc(10% - 2.2rem);
         bottom: 3.6rem;
         border: 2.2rem solid $mainbackgroundColor;
     }
