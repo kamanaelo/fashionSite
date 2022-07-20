@@ -5,7 +5,8 @@ mixin header(logoPath, headerItemsList)
             .header__wrap 
                 .header__content 
                     .header__content-logo 
-                        img(src=logoPath, alt="LOGO")
+                        a(href="#") 
+                            img(src=logoPath, alt="LOGO")
                     .header__content-menu 
                         ul.header__content-list
                             each item in headerItemsList

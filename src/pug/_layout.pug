@@ -1,0 +1,53 @@
+block mixins    
+   
+    include ../blocks/section-header/sectionHead.pug
+    include ../blocks/card/card.pug
+    include ../blocks/mozaic-catagory/catagory.pug
+    include ../blocks/mozaic-avone/avone.pug
+    include ../blocks/hero-section/hero.pug
+    include ../blocks/bottom-section/bottom.pug
+    include ../blocks/background-image/bg.pug
+    include ../blocks/header/header.pug
+    include ../blocks/footer/footer.pug
+    include ../blocks/button/button.pug
+    include ../blocks/input/input.pug
+
+block param
+    -
+        const itemList = ['home', 'shop', 'lookbook', 'features', 'pages', 'blog']
+        const caption = 'We earned a reputation of being good at what we do. Let us take your online shop to new dimension in success!';
+        const location = 'Comilla, Bangladesh 3500';
+        const email = 'kawsarahmed0210@gmail.com';
+        const phone = '01647470457';
+        const shopItemList = ['Shop', 'Collections', 'Outlet', 'Lookbook'];
+        const helpItemList = ['FAQ', 'Privecy Policy', 'Tearms and conditions', 'Return and Exchanges'];
+        const aboutItemList = ['Journal', 'Our Story', 'Contact', 'Store Location'];
+
+block var
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Fashion site
+    body 
+        block header    
+            +header(
+                require('/src/img/logo.svg'),
+                itemList
+            )
+        
+        block content 
+
+        block footer 
+            +footer(
+                require('/src/img/logo.svg'),
+                caption,
+                location,
+                email,
+                phone,
+                shopItemList,
+                helpItemList,
+                aboutItemList
+            )

@@ -1,0 +1,131 @@
+extends ../src/pug/_layout.pug
+
+block var 
+    -
+        const imgWomenGalleryPath = [
+            {
+                path: require('../src/img/womensFashion/women1.png'),
+                brand: 'igure',
+                caption: 'GREEN MUSCLE FIT POLO SHIRT',
+                price: '229.00',
+                sale: true,
+                newPrice: '129.00'
+            },
+            {
+                path: require('../src/img/womensFashion/women2.png'),
+                brand: 'igure',
+                caption: 'blue pretty SHIRT',
+                price: '389.00',
+                sale: true,
+                newPrice: '230.00'
+            },
+            {
+                path: require('../src/img/womensFashion/women3.png'),
+                brand: 'igure',
+                caption: 'red stripped shirt',
+                price: '240.00',
+                sale: true,
+                newPrice: '140.00'
+            },
+            {
+                path: require('../src/img/womensFashion/women4.png'),
+                brand: 'igure',
+                caption: 'black jeans jacket',
+                price: '699.00',
+                sale: true,
+                newPrice: '499.00'
+            }
+        
+        ];
+
+        const imgManGalleryPath = [
+            {
+                path: require('../src/img/mensFashion/men1.svg'),
+                brand: 'igure',
+                caption: 'nice shirt for nice guy',
+                price: '300.00',
+                sale: true,
+                newPrice: '499.00'
+            },
+            {
+                path: require('../src/img/mensFashion/men2.svg'),
+                brand: 'igure',
+                caption: 'basic pink t-shirt',
+                price: '130.00',
+                sale: true,
+                newPrice: '99.00'
+            },
+            {
+                path: require('../src/img/mensFashion/men3.svg'),
+                brand: 'igure',
+                caption: 'givenchy paris hoodie',
+                price: '790.00',
+                sale: true,
+                newPrice: '599.00'
+            },
+            {
+                path: require('../src/img/mensFashion/men4.svg'),
+                brand: 'igure',
+                caption: 'peach hoodie',
+                price: '430.00',
+                sale: true,
+                newPrice: '299.00'
+            },
+        ]
+
+block content 
+    .wrap
+        +heroSection(
+            require('../src/img/heroSection.png'),
+            'new trend', 
+            'COLLUSION', 
+            "An exclusive selection of this season's trends.", 
+            'discover|shop now'
+        )
+        main.container
+            //- .catagorySection
+            +catagory(
+                require('../src/img/catagory/catagory1.svg'),
+                require('../src/img/catagory/catagory2.svg'),
+                require('../src/img/catagory/catagory3.svg'),
+                require('../src/img/catagory/catagory4.svg'),
+                'catagory name'
+            )
+            //- .section 
+            +sectionHead("women's fashion", "Shop our new arrivals from established brands")
+            .gallery
+                each image in imgWomenGalleryPath
+                    //- p= image.path
+                    +card(
+                        image.path, 
+                        image.brand, 
+                        image.caption,
+                        image.price,
+                        image.sale,
+                        image.newPrice
+                    )
+            +sectionHead("men's fashion", "Shop our new arrivals from established brands")
+            .gallery
+                each image in imgManGalleryPath
+                    //- p= image.path
+                    +card(
+                        image.path, 
+                        image.brand, 
+                        image.caption,
+                        image.price,
+                        image.sale,
+                        image.newPrice
+                    )
+            +sectionHead("avone styles", "Choose Your Favorite Color")
+            +avone(
+                require('../src/img/avone/avone1.png'),
+                require('../src/img/avone/avone2.png'),
+                require('../src/img/womensFashion/women1.png')
+            )
+        +bottomSection(
+            require('../src/img/tachen.png'),
+            'OWN THE DAY',
+            'tachen 19',
+            '',
+            'shop collection'
+        )

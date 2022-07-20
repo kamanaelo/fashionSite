@@ -1,10 +1,18 @@
 .button{
     cursor: pointer;
+    // &__wrap{
+    //     position: relative;
+        
+    // }
     &__text{
         font-size: $mainFontSize;
         background: transparent;
         line-height: 1rem;
-        
+        &-section{
+            color: $fontMainColor;
+            font-size: $mainFontSize;
+            background: transparent;
+        }
     }
 
     &__underline{
@@ -19,6 +27,14 @@
         background-color: $fontMainColor;
         color: $mainbackgroundColor;
         text-transform: uppercase;
-        font-size: $h3FontSize;
+        // font-size: $h3FontSize;
+        font-weight: 500;
+        &-white{
+            white-space: nowrap;
+            min-width: 20rem;
+            max-height: 3.5rem;
+            color: $fontMainColor;
+            background-color: $mainbackgroundColor;
+        }
     }
 }

@@ -7,5 +7,6 @@ mixin catagory(imgPath1, imgPath2, imgPath3, imgPath4, catagoryName)
                 img(src=imgPath3, alt="Some image").mozaic__mid2
         .mozaic__rightColumnWrap
             img(src=imgPath4, alt="Some image").mozaic__right
-            +button('a', 'filled', underline=false, catagoryName).mozaic__button
+            .mozaic__rightColumnWrap-button
+                +button('a', 'filled filled-white', underline=false, catagoryName)
 //- .mozaic__rightColumnWrap

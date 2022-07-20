@@ -3,6 +3,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        margin-top: 6rem;
         // align-items: flex-end;
     }
     &__leftcolumnWrap {
@@ -17,7 +18,11 @@
         // flex-wrap: wrap;
         // align-items: flex-end;
         flex-direction: column;
-
+        &-button{
+            position: relative;
+            bottom: 11rem;
+            left: 16rem;
+        }
     }
     &__backImg{
         z-index: -1;
@@ -38,10 +43,10 @@
     }
 }
 
-.button{
-    &__wrap{
-        position: relative;
-        bottom: 11rem;
-        left: 16rem;
-    }
-}
+// .button{
+//     &__wrap{
+//         position: relative;
+//         bottom: 11rem;
+//         left: 16rem;
+//     }
+// }

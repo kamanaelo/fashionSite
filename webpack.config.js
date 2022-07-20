@@ -34,7 +34,7 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            template: './src/test.pug',
+            template: './src/index.pug',
             //filename: 'output.html',
             minify: false,
           }),
