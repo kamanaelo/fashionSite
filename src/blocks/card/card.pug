@@ -1,12 +1,11 @@
 mixin card(imgPath, brandName, caption, price, sale, newPrice)
-    .container 
-        .card__wrap 
-            img(src=imgPath, alt=`${caption}`).img.card__img
-            a(href="#").card__link.card__brand= brandName
-            a(href="#").card__link.card__caption= caption
-            if(sale)
-                .card__priceBox
-                    p.card__oldPrice= '$'+price
-                    p.card__newPrice= '$'+newPrice
-            else    
-                p.card__price= '$'+price
+    .card__wrap 
+        img(src=imgPath, alt=`${caption}`).img.card__img
+        a(href="#").card__link.card__brand= brandName
+        a(href="#").card__link.card__caption= caption
+        if(sale)
+            .card__priceBox
+                p.card__oldPrice= '$'+price
+                p.card__newPrice= '$'+newPrice
+        else    
+            p.card__price= '$'+price
