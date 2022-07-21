@@ -5,15 +5,16 @@ mixin heroSection(backgroundImg, subtitle, mainTitle, caption, buttonText)
             `${backgroundImg}`
         )
         .hero__wrap 
-            .hero__content
-                .hero__textBox.textBox
-                    .hero__textBox-subtitle= subtitle
-                    .hero__textBox-title= mainTitle
-                    .hero__textBox-caption= caption
-                    
-                    if(buttonText)
-                    .hero__textBox-button
-                        each text in buttonText.split('|')
-                            a.button.button__filled.button__filled-black= text
-                            //- +button('a', 'filled', false, text)
+            .container
+                .hero__content
+                    .hero__textBox.textBox
+                        .hero__textBox-subtitle= subtitle
+                        .hero__textBox-title= mainTitle
+                        .hero__textBox-caption= caption
+                        
+                        if(buttonText)
+                        .hero__textBox-button
+                            each text in buttonText.split('|')
+                                a.button.button__filled.button__filled-black= text
+                                //- +button('a', 'filled', false, text)
 
