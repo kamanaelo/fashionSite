@@ -74,54 +74,56 @@ block var
         ]
 
 block content 
-    .wrap
-        +heroSection(
-            require('../src/img/heroSection.png'),
-            'new trend', 
-            'COLLUSION', 
-            "An exclusive selection of this season's trends.", 
-            'discover|shop now'
+    //- .wrap
+    +heroSection(
+        require('../src/img/heroSection.png'),
+        'new trend', 
+        'COLLUSION', 
+        "An exclusive selection of this season's trends.", 
+        'discover|shop now'
+    )
+    .container 
+        +catagory(
+            require('../src/img/catagory/catagory1.svg'),
+            'catagory name1',
+            require('../src/img/catagory/catagory2.svg'),
+            'catagory name2',
+            require('../src/img/catagory/catagory3.svg'),
+            'catagory name3',
+            require('../src/img/catagory/catagory4.svg'),
+            'catagory name4'
         )
-        main.container
-            //- .catagorySection
-            +catagory(
-                require('../src/img/catagory/catagory1.svg'),
-                require('../src/img/catagory/catagory2.svg'),
-                require('../src/img/catagory/catagory3.svg'),
-                require('../src/img/catagory/catagory4.svg'),
-                'catagory name'
-            )
-            //- .section 
-            +sectionHead("women's fashion", "Shop our new arrivals from established brands")
-            .gallery
-                each image in imgWomenGalleryPath
-                    //- p= image.path
-                    +card(
-                        image.path, 
-                        image.brand, 
-                        image.caption,
-                        image.price,
-                        image.sale,
-                        image.newPrice
-                    )
-            +sectionHead("men's fashion", "Shop our new arrivals from established brands")
-            .gallery
-                each image in imgManGalleryPath
-                    //- p= image.path
-                    +card(
-                        image.path, 
-                        image.brand, 
-                        image.caption,
-                        image.price,
-                        image.sale,
-                        image.newPrice
-                    )
-            +sectionHead("avone styles", "Choose Your Favorite Color")
-            +avone(
-                require('../src/img/avone/avone1.png'),
-                require('../src/img/avone/avone2.png'),
-                require('../src/img/womensFashion/women1.png')
-            )
+        //- .section          
+        +sectionHead("women's fashion", "Shop our new arrivals from established brands")
+        .gallery
+            each image in imgWomenGalleryPath
+                //- p= image.path
+                +card(
+                    image.path, 
+                    image.brand, 
+                    image.caption,
+                    image.price,
+                    image.sale,
+                    image.newPrice
+                )
+        +sectionHead("men's fashion", "Shop our new arrivals from established brands")
+        .gallery
+            each image in imgManGalleryPath
+                //- p= image.path
+                +card(
+                    image.path, 
+                    image.brand, 
+                    image.caption,
+                    image.price,
+                    image.sale,
+                    image.newPrice
+                )
+        +sectionHead("avone styles", "Choose Your Favorite Color")
+        +avone(
+            require('../src/img/avone/avone1.png'),
+            require('../src/img/avone/avone2.png'),
+            require('../src/img/womensFashion/women1.png')
+        )
         +bottomSection(
             require('../src/img/tachen.png'),
             'OWN THE DAY',

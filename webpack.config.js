@@ -11,6 +11,7 @@ const webpack = require('webpack');
 // const isProd = !isDev;
 
 module.exports = {
+    mode: 'development',
     entry:{
         main: path.resolve(__dirname, './src/index.js'),
     },
