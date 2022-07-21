@@ -29,8 +29,9 @@ html, body{
 }
 .container{
     height: 100%;
+    width: 100%;
     max-width: 1160px;
-    padding: 0 15px;
+    padding: 0 1.5rem;
     margin: 0 auto;
 }
 .gallery{
@@ -48,6 +49,3 @@ html, body{
     }
 }
 
-// .catagorySection{
-
-// }
