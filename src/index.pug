@@ -82,18 +82,18 @@ block content
         "An exclusive selection of this season's trends.", 
         'discover|shop now'
     )
-    .container 
-        +catagory(
-            require('../src/img/catagory/catagory1.svg'),
-            'catagory name1',
-            require('../src/img/catagory/catagory2.svg'),
-            'catagory name2',
-            require('../src/img/catagory/catagory3.svg'),
-            'catagory name3',
-            require('../src/img/catagory/catagory4.svg'),
-            'catagory name4'
-        )
-        //- .section          
+        
+    +catagory(
+        require('../src/img/catagory/catagory1.svg'),
+        'catagory name1',
+        require('../src/img/catagory/catagory2.svg'),
+        'catagory name2',
+        require('../src/img/catagory/catagory3.svg'),
+        'catagory name3',
+        require('../src/img/catagory/catagory4.svg'),
+        'catagory name4'
+    )
+    .container           
         +sectionHead("women's fashion", "Shop our new arrivals from established brands")
         .gallery
             each image in imgWomenGalleryPath
