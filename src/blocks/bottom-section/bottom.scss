@@ -1,8 +1,9 @@
 .bottom{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: relative;
     min-width: 58rem;
+    // position: sticky;
 
     @include background;
 
@@ -67,4 +68,29 @@
     // color: $mainbackgroundColor;
     // background-color: $fontMainColor;
     font-size: $h3FontSize;
+}
+
+@media (max-width: 1000px){
+    .bottom{
+        &__bg{
+            filter: opacity(50%);
+        }
+        &__wrap{
+            width: 100vw;
+        }
+        &__textBox{
+            align-items: center;
+            &-title{
+                font-size: 5rem;
+            }
+            &-button{
+                width: 100%;
+            }
+        }
+    }
+    .button{
+        width: 100%;
+        margin: 0 auto;
+        // align-content: center;
+    }
 }
