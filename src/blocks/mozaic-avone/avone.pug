@@ -1,10 +1,10 @@
 mixin avone(imgPath1, imgPath2, imgPath3)
     .avone__wrap 
-        .avone__leftcolumnWrap 
-            img(src=imgPath1, alt="Some image").avone__leftImg
+        .avone__leftColumnWrap 
+            img(src=imgPath1, alt="Some image").avone__leftImg.avone__img
         .avone__rightColumnWrap 
-            img(src=imgPath2, alt="Some image").avone__backImg
+            img(src=imgPath2, alt="Some image").avone__backImg.avone__img
             .avone__rightColumnWrap-after
-                img(src=imgPath3, alt="Some image").avone__frontImg
+                img(src=imgPath3, alt="Some image").avone__frontImg.avone__img
                 .avone__rightColumnWrap-button
                     +button('a', 'text-section', "show women's dress")

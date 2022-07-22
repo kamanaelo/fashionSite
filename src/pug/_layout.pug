@@ -31,23 +31,25 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Fashion site
+        script(defer src="../jquery-3.6.0.min.js") 
     body 
-        block header    
-            +header(
-                require('/src/img/logo.svg'),
-                itemList
-            )
+        .wrap
+            block header    
+                +header(
+                    require('/src/img/logo.svg'),
+                    itemList
+                )
         
-        block content 
+            block content 
 
-        block footer 
-            +footer(
-                require('/src/img/logo.svg'),
-                caption,
-                location,
-                email,
-                phone,
-                shopItemList,
-                helpItemList,
-                aboutItemList
-            )
+            block footer 
+                +footer(
+                    require('/src/img/logo.svg'),
+                    caption,
+                    location,
+                    email,
+                    phone,
+                    shopItemList,
+                    helpItemList,
+                    aboutItemList
+                )
