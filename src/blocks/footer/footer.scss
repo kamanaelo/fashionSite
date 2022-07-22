@@ -2,11 +2,11 @@
     font-size: $mainFontSize;
     font-weight: 400;
     display: block;
-    max-height: 70rem;
+    // max-height: 70rem;
     background: $subBackgroundColor1;
     padding-top: 11.5rem;
     &__main{
-        padding-bottom: 10rem;
+        padding-bottom: 5rem;
     }
     &__content{
         display: flex;
@@ -18,6 +18,11 @@
         max-width: 15rem;
         max-height: 4rem;
         margin-bottom: 1.7rem;
+        &-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
     &__caption{
         max-width: 41rem;
@@ -79,10 +84,11 @@
     &__infoBox{
         display: flex;
         flex-direction: row;
-        align-items: center;
-        &-column:not(:last-child) {
-            margin-right: 8.8rem;
-        }
+        align-items: flex-start;
+        justify-content: space-between;
+        // &-column:not(:last-child) {
+        //     margin-right: 8.8rem;
+        // }
         &-title{
             text-transform: uppercase;
             font-size: $h2FontSize;
@@ -115,5 +121,52 @@
     }
     &__button{
         flex: 0 1 100%;
+    }
+}
+
+@media (max-width: 540px){
+    .footer{
+    
+        &__content{
+            flex-direction: column-reverse;
+            
+        }
+        &__leftSide, &__rightSide{
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        &__logo{
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 1.7rem;
+        }
+        &__location{
+            justify-content: center;
+        }
+        &__caption{
+            margin: 0 auto;
+            margin-bottom: 1.7rem;
+        }
+        &__icon{
+            justify-content: space-between;
+            // margin-bottom: 2rem;
+        }
+        &__infoBox{
+            flex-direction: column;
+            &-column{
+                // margin-right: 0;
+                margin: 0 auto;
+                padding-bottom: 2rem;
+                justify-content: center;
+            }
+        }
+        &__inputForm-caption{
+            text-align: center;
+        }
+        &__bottom{
+            text-align: center;
+        }
     }
 }
