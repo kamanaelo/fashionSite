@@ -1,1 +1,369 @@
-(()=>{var t={2:()=>{var t=document.querySelector(".header__burger"),e=document.querySelector(".header__content"),i=document.querySelector(".container"),a=document.querySelector("body");t.addEventListener("click",(function(){t.classList.toggle("close"),e.classList.toggle("active"),a.classList.toggle("lock"),i.classList.toggle("paddingNull")}))},138:(t,e,i)=>{var a=i(55);t.exports=function(t){var e,o="",s={},r=t||{};return function(t,r){s.sectionHead=e=function(t,i){this&&this.block,this&&this.attributes,o=o+'<div class="sectionHeader">   <h2 class="sectionHeader__main">'+a.escape(null==(e=t)?"":e)+'</h2><p class="sectionHeader__caption">'+a.escape(null==(e=i)?"":e)+"</p></div>"},s.card=e=function(t,i,s,r,c,n){this&&this.block,this&&this.attributes,o=o+'<div class="card__wrap"> <img class="img card__img"'+a.attr("src",t,!0,!0)+a.attr("alt",`${s}`,!0,!0)+'><a class="card__link card__brand" href="#">'+a.escape(null==(e=i)?"":e)+'</a><a class="card__link card__caption" href="#">'+a.escape(null==(e=s)?"":e)+"</a>",o=c?o+'<div class="card__priceBox"><p class="card__oldPrice">'+a.escape(null==(e="$"+r)?"":e)+'</p><p class="card__newPrice">'+a.escape(null==(e="$"+n)?"":e)+"</p></div>":o+'<p class="card__price">'+a.escape(null==(e="$"+r)?"":e)+"</p>",o+="</div>"},s.catagory=e=function(t,e,i,r,c,n,l,d){this&&this.block,this&&this.attributes,o=o+'<div class="mozaic__wrap"> <div class="mozaic__item mozaic__item-top"><img class="img mozaic__img"'+a.attr("src",t,!0,!0)+' alt="Some image">',s.button("a","filled filled-white mozaic",e),o=o+'</div><div class="mozaic__item mozaic__item-bottomLeft"> <img class="img mozaic__img"'+a.attr("src",i,!0,!0)+' alt="Some image">',s.button("a","filled filled-white mozaic",r),o=o+'</div><div class="mozaic__item mozaic__item-bottomRight"> <img class="img mozaic__img"'+a.attr("src",c,!0,!0)+' alt="Some image">',s.button("a","filled filled-white mozaic",n),o=o+'</div><div class="mozaic__item mozaic__item-big"><img class="img mozaic__img"'+a.attr("src",l,!0,!0)+' alt="Some image">',s.button("a","filled filled-white mozaic",d),o+="</div></div>"},s.avone=e=function(t,e,i){this&&this.block,this&&this.attributes,o=o+'<div class="avone__wrap"> <div class="avone__leftColumnWrap"> <img class="avone__leftImg avone__img"'+a.attr("src",t,!0,!0)+' alt="Some image"></div><div class="avone__rightColumnWrap"> <img class="avone__backImg avone__img"'+a.attr("src",e,!0,!0)+' alt="Some image"><div class="avone__rightColumnWrap-after"><img class="avone__frontImg avone__img"'+a.attr("src",i,!0,!0)+' alt="Some image"><div class="avone__rightColumnWrap-button">',s.button("a","text-section","show women's dress"),o+="</div></div></div></div>"},s.heroSection=e=function(t,i,r,c,n){this&&this.block,this&&this.attributes,o+='<main class="hero"> ',s.backgroundImg("hero",`${t}`),o=o+'<div class="hero__wrap"> <div class="container"><div class="hero__content"><div class="hero__textBox textBox"><div class="hero__textBox-subtitle">'+a.escape(null==(e=i)?"":e)+'</div><div class="hero__textBox-title">'+a.escape(null==(e=r)?"":e)+'</div><div class="hero__textBox-caption">'+a.escape(null==(e=c)?"":e)+"</div>",o+='<div class="hero__textBox-button">',function(){var t=n.split("|");if("number"==typeof t.length)for(var i=0,s=t.length;i<s;i++){var r=t[i];o=o+'<a class="button button__filled button__filled-black">'+a.escape(null==(e=r)?"":e)+"</a>"}else for(var i in s=0,t)s++,r=t[i],o=o+'<a class="button button__filled button__filled-black">'+a.escape(null==(e=r)?"":e)+"</a>"}.call(this),o+="</div></div></div></div></div></main>"},s.bottomSection=e=function(t,i,r,c,n){this&&this.block,this&&this.attributes,o+='<div class="bottom">',s.backgroundImg("bottom",`${t}`),o=(o=o+'<div class="bottom__wrap"> <div class="bottom__content"> <div class="container"><div class="bottom__textBox textBox"> <div class="bottom__textBox-subtitle">'+a.escape(null==(e=i)?"":e)+'</div><div class="bottom__textBox-title">'+a.escape(null==(e=r)?"":e)+"</div>")+'<div class="bottom__caption">'+a.escape(null==(e=c)?"":e)+"</div>",n&&(o+='<div class="bottom____textBox-button"> ',function(){var t=n.split("|");if("number"==typeof t.length)for(var i=0,s=t.length;i<s;i++){var r=t[i];o=o+'<a class="button button__filled button__filled-black">'+a.escape(null==(e=r)?"":e)+"</a>"}else for(var i in s=0,t)s++,r=t[i],o=o+'<a class="button button__filled button__filled-black">'+a.escape(null==(e=r)?"":e)+"</a>"}.call(this),o+="</div>"),o+="</div></div></div></div></div>"},s.backgroundImg=e=function(t,e){this&&this.block,this&&this.attributes,o=o+"<div"+a.attr("class",a.classes([`${t}__bg`],[!0]),!1,!0)+"> <img"+(a.attr("class",a.classes([`${t}__bg-img`],[!0]),!1,!0)+a.attr("src",e,!0,!0))+' alt="background image"></div>'},s.header=e=function(t,i){this&&this.block,this&&this.attributes,o=o+'<header class="header"><div class="header__burger"> <span class="header__burger-main"></span></div><div class="header__wrap"> <div class="container"><div class="header__content"> <div class="header__content-logo"> <a href="#"> <img'+a.attr("src",t,!0,!0)+' alt="LOGO"></a></div><div class="header__content-menu"> <ul class="header__content-list">',function(){var t=i;if("number"==typeof t.length)for(var s=0,r=t.length;s<r;s++){var c=t[s];o=o+'<li class="header__content-item"><a class="button__text">'+a.escape(null==(e=c)?"":e)+"</a></li>"}else for(var s in r=0,t)r++,c=t[s],o=o+'<li class="header__content-item"><a class="button__text">'+a.escape(null==(e=c)?"":e)+"</a></li>"}.call(this),o+='</ul></div><div class="header__content-iconBlock"> <a class="header__icon-search"></a><a class="header__icon-hearth"></a><a class="header__icon-shop"></a></div></div></div></div></header>'},s.footer=e=function(i,r,c,n,l,d,u,_){this&&this.block,this&&this.attributes,o=o+'<footer class="footer"> <div class="footer__main"> <div class="container"><div class="footer__content"><div class="footer__leftSide"><div class="footer__logo"> <img class="footer__logo-img"'+a.attr("src",i,!0,!0)+' alt="LOGO"></div><div class="footer__caption">'+a.escape(null==(e=r)?"":e)+'</div><div class="footer__location"> <i class="footer__location-icon"> </i><div class="footer__location-text">'+a.escape(null==(e=c)?"":e)+'</div></div><div class="footer__contact"> <div class="footer__contact-email">'+a.escape(null==(e=n)?"":e)+'</div><div class="footer__contact-phone">'+a.escape(null==(e=l)?"":e)+'</div></div><div class="footer__icon"><a class="footer__icon-fb"></a><a class="footer__icon-inst"></a><a class="footer__icon-twitter"> </a><a class="footer__icon-linkedin"></a></div></div><div class="footer__rightSide"> <form class="footer__inputForm-form" action="#" method="get"> <div class="footer__inputForm-caption">'+a.escape(null==(e="recieve email updates")?"":e)+"</div>",s.input("Your Email Address","","email","join"),o=o+'</form><div class="footer__infoBox"> <div class="footer__infoBox-column"> <div class="footer__infoBox-title">'+a.escape(null==(e="shop")?"":e)+'</div><ul class="footer__infoBox-list">',function(){var t=d;if("number"==typeof t.length)for(var i=0,s=t.length;i<s;i++){var r=t[i];o=o+'<li class="footer__infoBox-item"><a class="button__text footer__infoBox-link">'+a.escape(null==(e=r)?"":e)+"</a></li>"}else for(var i in s=0,t)s++,r=t[i],o=o+'<li class="footer__infoBox-item"><a class="button__text footer__infoBox-link">'+a.escape(null==(e=r)?"":e)+"</a></li>"}.call(this),o=o+'</ul></div><div class="footer__infoBox-column"> <div class="footer__infoBox-title">'+a.escape(null==(e="help")?"":e)+'</div><ul class="footer__footer__infoBox-list">',function(){var t=u;if("number"==typeof t.length)for(var i=0,s=t.length;i<s;i++){var r=t[i];o=o+'<li class="footer__infoBox-item"><a class="button__text footer__infoBox-link">'+a.escape(null==(e=r)?"":e)+"</a></li>"}else for(var i in s=0,t)s++,r=t[i],o=o+'<li class="footer__infoBox-item"><a class="button__text footer__infoBox-link">'+a.escape(null==(e=r)?"":e)+"</a></li>"}.call(this),o=o+'</ul></div><div class="footer__infoBox-column"> <div class="footer__infoBox-title">'+a.escape(null==(e="about")?"":e)+'</div><ul class="footer__footer__infoBox-list">',function(){var t=_;if("number"==typeof t.length)for(var i=0,s=t.length;i<s;i++){var r=t[i];o=o+'<li class="footer__infoBox-item"><a class="button__text footer__infoBox-link">'+a.escape(null==(e=r)?"":e)+"</a></li>"}else for(var i in s=0,t)s++,r=t[i],o=o+'<li class="footer__infoBox-item"><a class="button__text footer__infoBox-link">'+a.escape(null==(e=r)?"":e)+"</a></li>"}.call(this),o+="</ul></div></div></div></div></div></div>";const f=(new t).getFullYear();o=o+'<div class="footer__bottom">'+a.escape(null==(e="Copyright © "+f+". Your company name  All rights reserved")?"":e)+"</div></footer>"},s.button=e=function(t,i,s){this&&this.block;var c=this&&this.attributes||{};const n={class:["button"]};i&&(function(){var t=i.split(" ");if("number"==typeof t.length)for(var e=0,a=t.length;e<a;e++){var o=t[e];n.class.push(`button__${o}`)}else for(var e in a=0,t)a++,o=t[e],n.class.push(`button__${o}`)}.call(this),o=o+"<"+t+a.attrs(r.assign({},c,n),!0)+">"+a.escape(null==(e=s)?"":e)+"</"+t+">")},s.input=e=function(t,i,s,c){this&&this.block;var n=this&&this.attributes||{};const l={class:["input"]};i&&function(){var t=i.split(" ");if("number"==typeof t.length)for(var e=0,a=t.length;e<a;e++){var o=t[e];l.class.push(`input__${o}`)}else for(var e in a=0,t)a++,o=t[e],l.class.push(`input__${o}`)}.call(this),o=o+'<div class="input__wrap"> <input'+a.attrs(a.merge([{type:a.escape(`${s}`),placeholder:a.escape(`${t}`)},r.assign({},n,l)]),!0)+">","email"===s&&(o=o+'<button class="input__button" type="submit">'+a.escape(null==(e=c)?"":e)+"</button>"),o+="</div>"};const c=[{path:i(355),brand:"igure",caption:"GREEN MUSCLE FIT POLO SHIRT",price:"229.00",sale:!0,newPrice:"129.00"},{path:i(679),brand:"igure",caption:"blue pretty SHIRT",price:"389.00",sale:!0,newPrice:"230.00"},{path:i(581),brand:"igure",caption:"red stripped shirt",price:"240.00",sale:!0,newPrice:"140.00"},{path:i(357),brand:"igure",caption:"black jeans jacket",price:"699.00",sale:!0,newPrice:"499.00"}],n=[{path:i(276),brand:"igure",caption:"nice shirt for nice guy",price:"300.00",sale:!0,newPrice:"499.00"},{path:i(24),brand:"igure",caption:"basic pink t-shirt",price:"130.00",sale:!0,newPrice:"99.00"},{path:i(199),brand:"igure",caption:"givenchy paris hoodie",price:"790.00",sale:!0,newPrice:"599.00"},{path:i(900),brand:"igure",caption:"peach hoodie",price:"430.00",sale:!0,newPrice:"299.00"}];o+='<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Fashion site</title></head><body> <div class="wrap">',s.header(i(582),["home","shop","lookbook","features","pages","blog"]),s.heroSection(i(176),"new trend","COLLUSION","An exclusive selection of this season's trends.","discover|shop now"),o+='<div class="container">',s.catagory(i(326),"catagory name1",i(890),"catagory name2",i(259),"catagory name3",i(316),"catagory name4"),s.sectionHead("women's fashion","Shop our new arrivals from established brands"),o+='<div class="gallery">',function(){var t=c;if("number"==typeof t.length)for(var e=0,i=t.length;e<i;e++){var a=t[e];s.card(a.path,a.brand,a.caption,a.price,a.sale,a.newPrice)}else for(var e in i=0,t)i++,a=t[e],s.card(a.path,a.brand,a.caption,a.price,a.sale,a.newPrice)}.call(this),o+="</div>",s.sectionHead("men's fashion","Shop our new arrivals from established brands"),o+='<div class="gallery">',function(){var t=n;if("number"==typeof t.length)for(var e=0,i=t.length;e<i;e++){var a=t[e];s.card(a.path,a.brand,a.caption,a.price,a.sale,a.newPrice)}else for(var e in i=0,t)i++,a=t[e],s.card(a.path,a.brand,a.caption,a.price,a.sale,a.newPrice)}.call(this),o+="</div>",s.sectionHead("avone styles","Choose Your Favorite Color"),s.avone(i(804),i(11),i(355)),o+="</div>",s.bottomSection(i(930),"OWN THE DAY","tachen 19","","shop collection"),s.footer(i(582),"We earned a reputation of being good at what we do. Let us take your online shop to new dimension in success!","Comilla, Bangladesh 3500","kawsarahmed0210@gmail.com","01647470457",["Shop","Collections","Outlet","Lookbook"],["FAQ","Privecy Policy","Tearms and conditions","Return and Exchanges"],["Journal","Our Story","Contact","Store Location"]),o+='<script src="../script.js"> <\/script></div></body></html>'}.call(this,"Date"in r?r.Date:"undefined"!=typeof Date?Date:void 0,"Object"in r?r.Object:"undefined"!=typeof Object?Object:void 0),o}},55:(t,e,i)=>{"use strict";var a=Object.prototype.hasOwnProperty;function o(t,e){return Array.isArray(t)?function(t,e){for(var i,a="",s="",r=Array.isArray(e),c=0;c<t.length;c++)(i=o(t[c]))&&(r&&e[c]&&(i=n(i)),a=a+s+i,s=" ");return a}(t,e):t&&"object"==typeof t?function(t){var e="",i="";for(var o in t)o&&t[o]&&a.call(t,o)&&(e=e+i+o,i=" ");return e}(t):t||""}function s(t){if(!t)return"";if("object"==typeof t){var e="";for(var i in t)a.call(t,i)&&(e=e+i+":"+t[i]+";");return e}return t+""}function r(t,e,i,a){if(!1===e||null==e||!e&&("class"===t||"style"===t))return"";if(!0===e)return" "+(a?t:t+'="'+t+'"');var o=typeof e;return"object"!==o&&"function"!==o||"function"!=typeof e.toJSON||(e=e.toJSON()),"string"==typeof e||(e=JSON.stringify(e),i||-1===e.indexOf('"'))?(i&&(e=n(e))," "+t+'="'+e+'"'):" "+t+"='"+e.replace(/'/g,"&#39;")+"'"}e.merge=function t(e,i){if(1===arguments.length){for(var a=e[0],o=1;o<e.length;o++)a=t(a,e[o]);return a}for(var r in i)if("class"===r){var c=e[r]||[];e[r]=(Array.isArray(c)?c:[c]).concat(i[r]||[])}else if("style"===r){c=(c=s(e[r]))&&";"!==c[c.length-1]?c+";":c;var n=s(i[r]);n=n&&";"!==n[n.length-1]?n+";":n,e[r]=c+n}else e[r]=i[r];return e},e.classes=o,e.style=s,e.attr=r,e.attrs=function(t,e){var i="";for(var c in t)if(a.call(t,c)){var n=t[c];if("class"===c){i=r(c,n=o(n),!1,e)+i;continue}"style"===c&&(n=s(n)),i+=r(c,n,!1,e)}return i};var c=/["&<>]/;function n(t){var e=""+t,i=c.exec(e);if(!i)return t;var a,o,s,r="";for(a=i.index,o=0;a<e.length;a++){switch(e.charCodeAt(a)){case 34:s="&quot;";break;case 38:s="&amp;";break;case 60:s="&lt;";break;case 62:s="&gt;";break;default:continue}o!==a&&(r+=e.substring(o,a)),o=a+1,r+=s}return o!==a?r+e.substring(o,a):r}e.escape=n,e.rethrow=function t(e,a,o,s){if(!(e instanceof Error))throw e;if(!("undefined"==typeof window&&a||s))throw e.message+=" on line "+o,e;try{s=s||i(835).readFileSync(a,"utf8")}catch(i){t(e,null,o)}var r=3,c=s.split("\n"),n=Math.max(o-r,0),l=Math.min(c.length,o+r);throw r=c.slice(n,l).map((function(t,e){var i=e+n+1;return(i==o?"  > ":"    ")+i+"| "+t})).join("\n"),e.path=a,e.message=(a||"Pug")+":"+o+"\n"+r+"\n\n"+e.message,e}},804:(t,e,i)=>{"use strict";t.exports=i.p+"img/134ab900dfde90c41e5e.png"},11:(t,e,i)=>{"use strict";t.exports=i.p+"img/953180d1a2dcce9a75e6.png"},326:(t,e,i)=>{"use strict";t.exports=i.p+"img/9c23c54ede11c909cd12.svg"},890:(t,e,i)=>{"use strict";t.exports=i.p+"img/b435ea145031e8a9fb31.svg"},259:(t,e,i)=>{"use strict";t.exports=i.p+"img/2130e4b0f94cfadf1abf.svg"},316:(t,e,i)=>{"use strict";t.exports=i.p+"img/f73c5a45a13f60c8bbd3.svg"},176:(t,e,i)=>{"use strict";t.exports=i.p+"img/2a647f9fda0fd1554702.png"},582:(t,e,i)=>{"use strict";t.exports=i.p+"img/41e534c9bfcab4b68e4a.svg"},276:(t,e,i)=>{"use strict";t.exports=i.p+"img/0bc08cdf7f5eb50ac963.svg"},24:(t,e,i)=>{"use strict";t.exports=i.p+"img/ad1b18ebe320b11a1b66.svg"},199:(t,e,i)=>{"use strict";t.exports=i.p+"img/91316e1f28f575265ba8.svg"},900:(t,e,i)=>{"use strict";t.exports=i.p+"img/330aea3965c33c525312.svg"},930:(t,e,i)=>{"use strict";t.exports=i.p+"img/9072ffcf1884662b8f04.png"},355:(t,e,i)=>{"use strict";t.exports=i.p+"img/78dc57b4ce293cfec53c.png"},679:(t,e,i)=>{"use strict";t.exports=i.p+"img/212c67f55e08f63e3ddf.png"},581:(t,e,i)=>{"use strict";t.exports=i.p+"img/72be48c961aaf4ca6ea3.png"},357:(t,e,i)=>{"use strict";t.exports=i.p+"img/bdb9c42adad7c267d52a.png"},835:()=>{}},e={};function i(a){var o=e[a];if(void 0!==o)return o.exports;var s=e[a]={exports:{}};return t[a](s,s.exports,i),s.exports}i.n=t=>{var e=t&&t.__esModule?()=>t.default:()=>t;return i.d(e,{a:e}),e},i.d=(t,e)=>{for(var a in e)i.o(e,a)&&!i.o(t,a)&&Object.defineProperty(t,a,{enumerable:!0,get:e[a]})},i.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(t){if("object"==typeof window)return window}}(),i.o=(t,e)=>Object.prototype.hasOwnProperty.call(t,e),(()=>{var t;i.g.importScripts&&(t=i.g.location+"");var e=i.g.document;if(!t&&e&&(e.currentScript&&(t=e.currentScript.src),!t)){var a=e.getElementsByTagName("script");a.length&&(t=a[a.length-1].src)}if(!t)throw new Error("Automatic publicPath is not supported in this browser");t=t.replace(/#.*$/,"").replace(/\?.*$/,"").replace(/\/[^\/]+$/,"/"),i.p=t})(),(()=>{"use strict";i(138),i(2)})()})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_index_pug__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/index.pug */ \"./src/index.pug\");\n/* harmony import */ var _src_index_pug__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_index_pug__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _src_script__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/script */ \"./src/script.js\");\n/* harmony import */ var _src_script__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_src_script__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _src_style_global_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/style/global.scss */ \"./src/style/global.scss\");\n\n\n\n\n//# sourceURL=webpack://practice/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/script.js":
+/*!***********************!*\
+  !*** ./src/script.js ***!
+  \***********************/
+/***/ (() => {
+
+eval("var burger = document.querySelector('.header__burger');\nvar header = document.querySelector('.header__content');\nvar container = document.querySelector('.container');\nvar body = document.querySelector('body');\nburger.addEventListener('click', burgerActive); // console.log(burger)\n\nfunction burgerActive() {\n  burger.classList.toggle('close');\n  header.classList.toggle('active');\n  body.classList.toggle('lock');\n  container.classList.toggle('paddingNull');\n}\n\n//# sourceURL=webpack://practice/./src/script.js?");
+
+/***/ }),
+
+/***/ "./src/style/global.scss":
+/*!*******************************!*\
+  !*** ./src/style/global.scss ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://practice/./src/style/global.scss?");
+
+/***/ }),
+
+/***/ "./src/index.pug":
+/*!***********************!*\
+  !*** ./src/index.pug ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var pug = __webpack_require__(/*! !../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (Date, Object) {pug_mixins[\"sectionHead\"] = pug_interp = function(mainHeader, caption){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\npug_html = pug_html + \"\\u003Cdiv class=\\\"sectionHeader\\\"\\u003E   \\u003Ch2 class=\\\"sectionHeader__main\\\"\\u003E\" + (pug.escape(null == (pug_interp = mainHeader) ? \"\" : pug_interp)) + \"\\u003C\\u002Fh2\\u003E\\u003Cp class=\\\"sectionHeader__caption\\\"\\u003E\" + (pug.escape(null == (pug_interp = caption) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003C\\u002Fdiv\\u003E\";\n};\npug_mixins[\"card\"] = pug_interp = function(imgPath, brandName, caption, price, sale, newPrice){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\npug_html = pug_html + \"\\u003Cdiv class=\\\"card__wrap\\\"\\u003E \\u003Cimg\" + (\" class=\\\"img card__img\\\"\"+pug.attr(\"src\", imgPath, true, true)+pug.attr(\"alt\", `${caption}`, true, true)) + \"\\u003E\\u003Ca class=\\\"card__link card__brand\\\" href=\\\"#\\\"\\u003E\" + (pug.escape(null == (pug_interp = brandName) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\\u003Ca class=\\\"card__link card__caption\\\" href=\\\"#\\\"\\u003E\" + (pug.escape(null == (pug_interp = caption) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\";\nif ((sale)) {\npug_html = pug_html + \"\\u003Cdiv class=\\\"card__priceBox\\\"\\u003E\\u003Cp class=\\\"card__oldPrice\\\"\\u003E\" + (pug.escape(null == (pug_interp = '$'+price) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003Cp class=\\\"card__newPrice\\\"\\u003E\" + (pug.escape(null == (pug_interp = '$'+newPrice) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003C\\u002Fdiv\\u003E\";\n}\nelse {\npug_html = pug_html + \"\\u003Cp class=\\\"card__price\\\"\\u003E\" + (pug.escape(null == (pug_interp = '$'+price) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\";\n}\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\";\n};\npug_mixins[\"catagory\"] = pug_interp = function(imgPath1, catagoryName1, imgPath2, catagoryName2, imgPath3, catagoryName3, imgPath4, catagoryName4){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\npug_html = pug_html + \"\\u003Cdiv class=\\\"mozaic__wrap\\\"\\u003E \\u003Cdiv class=\\\"mozaic__item mozaic__item-top\\\"\\u003E\\u003Cimg\" + (\" class=\\\"img mozaic__img\\\"\"+pug.attr(\"src\", imgPath1, true, true)+\" alt=\\\"Some image\\\"\") + \"\\u003E\";\npug_mixins[\"button\"]('a', 'filled filled-white mozaic', catagoryName1);\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"mozaic__item mozaic__item-bottomLeft\\\"\\u003E \\u003Cimg\" + (\" class=\\\"img mozaic__img\\\"\"+pug.attr(\"src\", imgPath2, true, true)+\" alt=\\\"Some image\\\"\") + \"\\u003E\";\npug_mixins[\"button\"]('a', 'filled filled-white mozaic', catagoryName2);\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"mozaic__item mozaic__item-bottomRight\\\"\\u003E \\u003Cimg\" + (\" class=\\\"img mozaic__img\\\"\"+pug.attr(\"src\", imgPath3, true, true)+\" alt=\\\"Some image\\\"\") + \"\\u003E\";\npug_mixins[\"button\"]('a', 'filled filled-white mozaic', catagoryName3);\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"mozaic__item mozaic__item-big\\\"\\u003E\\u003Cimg\" + (\" class=\\\"img mozaic__img\\\"\"+pug.attr(\"src\", imgPath4, true, true)+\" alt=\\\"Some image\\\"\") + \"\\u003E\";\npug_mixins[\"button\"]('a', 'filled filled-white mozaic', catagoryName4);\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\";\n};\npug_mixins[\"avone\"] = pug_interp = function(imgPath1, imgPath2, imgPath3){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\npug_html = pug_html + \"\\u003Cdiv class=\\\"avone__wrap\\\"\\u003E \\u003Cdiv class=\\\"avone__leftColumnWrap\\\"\\u003E \\u003Cimg\" + (\" class=\\\"avone__leftImg avone__img\\\"\"+pug.attr(\"src\", imgPath1, true, true)+\" alt=\\\"Some image\\\"\") + \"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"avone__rightColumnWrap\\\"\\u003E \\u003Cimg\" + (\" class=\\\"avone__backImg avone__img\\\"\"+pug.attr(\"src\", imgPath2, true, true)+\" alt=\\\"Some image\\\"\") + \"\\u003E\\u003Cdiv class=\\\"avone__rightColumnWrap-after\\\"\\u003E\\u003Cimg\" + (\" class=\\\"avone__frontImg avone__img\\\"\"+pug.attr(\"src\", imgPath3, true, true)+\" alt=\\\"Some image\\\"\") + \"\\u003E\\u003Cdiv class=\\\"avone__rightColumnWrap-button\\\"\\u003E\";\npug_mixins[\"button\"]('a', 'text-section', \"show women's dress\");\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\";\n};\npug_mixins[\"heroSection\"] = pug_interp = function(backgroundImg, subtitle, mainTitle, caption, buttonText){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\npug_html = pug_html + \"\\u003Cmain class=\\\"hero\\\"\\u003E \";\npug_mixins[\"backgroundImg\"](\n            'hero',\n            `${backgroundImg}`\n        );\npug_html = pug_html + \"\\u003Cdiv class=\\\"hero__wrap\\\"\\u003E \\u003Cdiv class=\\\"container\\\"\\u003E\\u003Cdiv class=\\\"hero__content\\\"\\u003E\\u003Cdiv class=\\\"hero__textBox textBox\\\"\\u003E\\u003Cdiv class=\\\"hero__textBox-subtitle\\\"\\u003E\" + (pug.escape(null == (pug_interp = subtitle) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"hero__textBox-title\\\"\\u003E\" + (pug.escape(null == (pug_interp = mainTitle) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"hero__textBox-caption\\\"\\u003E\" + (pug.escape(null == (pug_interp = caption) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\";\nif ((buttonText)) {\n}\npug_html = pug_html + \"\\u003Cdiv class=\\\"hero__textBox-button\\\"\\u003E\";\n// iterate buttonText.split('|')\n;(function(){\n  var $$obj = buttonText.split('|');\n  if ('number' == typeof $$obj.length) {\n      for (var pug_index0 = 0, $$l = $$obj.length; pug_index0 < $$l; pug_index0++) {\n        var text = $$obj[pug_index0];\npug_html = pug_html + \"\\u003Ca class=\\\"button button__filled button__filled-black\\\"\\u003E\" + (pug.escape(null == (pug_interp = text) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\";\n      }\n  } else {\n    var $$l = 0;\n    for (var pug_index0 in $$obj) {\n      $$l++;\n      var text = $$obj[pug_index0];\npug_html = pug_html + \"\\u003Ca class=\\\"button button__filled button__filled-black\\\"\\u003E\" + (pug.escape(null == (pug_interp = text) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\";\n    }\n  }\n}).call(this);\n\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fmain\\u003E\";\n};\npug_mixins[\"bottomSection\"] = pug_interp = function(backgroundImg, subtitle, mainTitle, caption, buttonText){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\npug_html = pug_html + \"\\u003Cdiv class=\\\"bottom\\\"\\u003E\";\npug_mixins[\"backgroundImg\"](\n            'bottom',\n            `${backgroundImg}`\n        );\npug_html = pug_html + \"\\u003Cdiv class=\\\"bottom__wrap\\\"\\u003E \\u003Cdiv class=\\\"bottom__content\\\"\\u003E \\u003Cdiv class=\\\"container\\\"\\u003E\\u003Cdiv class=\\\"bottom__textBox textBox\\\"\\u003E \\u003Cdiv class=\\\"bottom__textBox-subtitle\\\"\\u003E\" + (pug.escape(null == (pug_interp = subtitle) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"bottom__textBox-title\\\"\\u003E\" + (pug.escape(null == (pug_interp = mainTitle) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\";\nif ((caption)) {\n}\npug_html = pug_html + \"\\u003Cdiv class=\\\"bottom__caption\\\"\\u003E\" + (pug.escape(null == (pug_interp = caption) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\";\nif ((buttonText)) {\npug_html = pug_html + \"\\u003Cdiv class=\\\"bottom____textBox-button\\\"\\u003E \";\n// iterate buttonText.split('|')\n;(function(){\n  var $$obj = buttonText.split('|');\n  if ('number' == typeof $$obj.length) {\n      for (var pug_index1 = 0, $$l = $$obj.length; pug_index1 < $$l; pug_index1++) {\n        var text = $$obj[pug_index1];\npug_html = pug_html + \"\\u003Ca class=\\\"button button__filled button__filled-black\\\"\\u003E\" + (pug.escape(null == (pug_interp = text) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\";\n      }\n  } else {\n    var $$l = 0;\n    for (var pug_index1 in $$obj) {\n      $$l++;\n      var text = $$obj[pug_index1];\npug_html = pug_html + \"\\u003Ca class=\\\"button button__filled button__filled-black\\\"\\u003E\" + (pug.escape(null == (pug_interp = text) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\";\n    }\n  }\n}).call(this);\n\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\";\n}\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\";\n};\npug_mixins[\"backgroundImg\"] = pug_interp = function(blockName, backgroundImg){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\npug_html = pug_html + \"\\u003Cdiv\" + (pug.attr(\"class\", pug.classes([`${blockName}`+'__bg'], [true]), false, true)) + \"\\u003E \\u003Cimg\" + (pug.attr(\"class\", pug.classes([`${blockName}`+'__bg-img'], [true]), false, true)+pug.attr(\"src\", backgroundImg, true, true)+\" alt=\\\"background image\\\"\") + \"\\u003E\\u003C\\u002Fdiv\\u003E\";\n};\npug_mixins[\"header\"] = pug_interp = function(logoPath, headerItemsList){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\npug_html = pug_html + \"\\u003Cheader class=\\\"header\\\"\\u003E\\u003Cdiv class=\\\"header__burger\\\"\\u003E \\u003Cspan class=\\\"header__burger-main\\\"\\u003E\\u003C\\u002Fspan\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"header__wrap\\\"\\u003E \\u003Cdiv class=\\\"container\\\"\\u003E\\u003Cdiv class=\\\"header__content\\\"\\u003E \\u003Cdiv class=\\\"header__content-logo\\\"\\u003E \\u003Ca href=\\\"#\\\"\\u003E \\u003Cimg\" + (pug.attr(\"src\", logoPath, true, true)+\" alt=\\\"LOGO\\\"\") + \"\\u003E\\u003C\\u002Fa\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"header__content-menu\\\"\\u003E \\u003Cul class=\\\"header__content-list\\\"\\u003E\";\n// iterate headerItemsList\n;(function(){\n  var $$obj = headerItemsList;\n  if ('number' == typeof $$obj.length) {\n      for (var pug_index2 = 0, $$l = $$obj.length; pug_index2 < $$l; pug_index2++) {\n        var item = $$obj[pug_index2];\npug_html = pug_html + \"\\u003Cli class=\\\"header__content-item\\\"\\u003E\\u003Ca class=\\\"button__text\\\"\\u003E\" + (pug.escape(null == (pug_interp = item) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\\u003C\\u002Fli\\u003E\";\n      }\n  } else {\n    var $$l = 0;\n    for (var pug_index2 in $$obj) {\n      $$l++;\n      var item = $$obj[pug_index2];\npug_html = pug_html + \"\\u003Cli class=\\\"header__content-item\\\"\\u003E\\u003Ca class=\\\"button__text\\\"\\u003E\" + (pug.escape(null == (pug_interp = item) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\\u003C\\u002Fli\\u003E\";\n    }\n  }\n}).call(this);\n\npug_html = pug_html + \"\\u003C\\u002Ful\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"header__content-iconBlock\\\"\\u003E \\u003Ca class=\\\"header__icon-search\\\"\\u003E\\u003C\\u002Fa\\u003E\\u003Ca class=\\\"header__icon-hearth\\\"\\u003E\\u003C\\u002Fa\\u003E\\u003Ca class=\\\"header__icon-shop\\\"\\u003E\\u003C\\u002Fa\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fheader\\u003E\";\n};\npug_mixins[\"footer\"] = pug_interp = function(logoPath, caption, location, email, phoneNumber, shopItemList, helpItemList, aboutItemList){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\npug_html = pug_html + \"\\u003Cfooter class=\\\"footer\\\"\\u003E \\u003Cdiv class=\\\"footer__main\\\"\\u003E \\u003Cdiv class=\\\"container\\\"\\u003E\\u003Cdiv class=\\\"footer__content\\\"\\u003E\\u003Cdiv class=\\\"footer__leftSide\\\"\\u003E\\u003Cdiv class=\\\"footer__logo\\\"\\u003E \\u003Cimg\" + (\" class=\\\"footer__logo-img\\\"\"+pug.attr(\"src\", logoPath, true, true)+\" alt=\\\"LOGO\\\"\") + \"\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"footer__caption\\\"\\u003E\" + (pug.escape(null == (pug_interp = caption) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"footer__location\\\"\\u003E \\u003Ci class=\\\"footer__location-icon\\\"\\u003E \\u003C\\u002Fi\\u003E\\u003Cdiv class=\\\"footer__location-text\\\"\\u003E\" + (pug.escape(null == (pug_interp = location) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"footer__contact\\\"\\u003E \\u003Cdiv class=\\\"footer__contact-email\\\"\\u003E\" + (pug.escape(null == (pug_interp = email) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"footer__contact-phone\\\"\\u003E\" + (pug.escape(null == (pug_interp = phoneNumber) ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"footer__icon\\\"\\u003E\\u003Ca class=\\\"footer__icon-fb\\\"\\u003E\\u003C\\u002Fa\\u003E\\u003Ca class=\\\"footer__icon-inst\\\"\\u003E\\u003C\\u002Fa\\u003E\\u003Ca class=\\\"footer__icon-twitter\\\"\\u003E \\u003C\\u002Fa\\u003E\\u003Ca class=\\\"footer__icon-linkedin\\\"\\u003E\\u003C\\u002Fa\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"footer__rightSide\\\"\\u003E \\u003Cform class=\\\"footer__inputForm-form\\\" action=\\\"#\\\" method=\\\"get\\\"\\u003E \\u003Cdiv class=\\\"footer__inputForm-caption\\\"\\u003E\" + (pug.escape(null == (pug_interp = 'recieve email updates') ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\";\npug_mixins[\"input\"](\n                                'Your Email Address',\n                                '',\n                                'email',\n                                'join'\n                            );\npug_html = pug_html + \"\\u003C\\u002Fform\\u003E\\u003Cdiv class=\\\"footer__infoBox\\\"\\u003E \\u003Cdiv class=\\\"footer__infoBox-column\\\"\\u003E \\u003Cdiv class=\\\"footer__infoBox-title\\\"\\u003E\" + (pug.escape(null == (pug_interp = 'shop') ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003Cul class=\\\"footer__infoBox-list\\\"\\u003E\";\n// iterate shopItemList\n;(function(){\n  var $$obj = shopItemList;\n  if ('number' == typeof $$obj.length) {\n      for (var pug_index3 = 0, $$l = $$obj.length; pug_index3 < $$l; pug_index3++) {\n        var item = $$obj[pug_index3];\npug_html = pug_html + \"\\u003Cli class=\\\"footer__infoBox-item\\\"\\u003E\\u003Ca class=\\\"button__text footer__infoBox-link\\\"\\u003E\" + (pug.escape(null == (pug_interp = item) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\\u003C\\u002Fli\\u003E\";\n      }\n  } else {\n    var $$l = 0;\n    for (var pug_index3 in $$obj) {\n      $$l++;\n      var item = $$obj[pug_index3];\npug_html = pug_html + \"\\u003Cli class=\\\"footer__infoBox-item\\\"\\u003E\\u003Ca class=\\\"button__text footer__infoBox-link\\\"\\u003E\" + (pug.escape(null == (pug_interp = item) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\\u003C\\u002Fli\\u003E\";\n    }\n  }\n}).call(this);\n\npug_html = pug_html + \"\\u003C\\u002Ful\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"footer__infoBox-column\\\"\\u003E \\u003Cdiv class=\\\"footer__infoBox-title\\\"\\u003E\" + (pug.escape(null == (pug_interp = 'help') ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003Cul class=\\\"footer__footer__infoBox-list\\\"\\u003E\";\n// iterate helpItemList\n;(function(){\n  var $$obj = helpItemList;\n  if ('number' == typeof $$obj.length) {\n      for (var pug_index4 = 0, $$l = $$obj.length; pug_index4 < $$l; pug_index4++) {\n        var item = $$obj[pug_index4];\npug_html = pug_html + \"\\u003Cli class=\\\"footer__infoBox-item\\\"\\u003E\\u003Ca class=\\\"button__text footer__infoBox-link\\\"\\u003E\" + (pug.escape(null == (pug_interp = item) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\\u003C\\u002Fli\\u003E\";\n      }\n  } else {\n    var $$l = 0;\n    for (var pug_index4 in $$obj) {\n      $$l++;\n      var item = $$obj[pug_index4];\npug_html = pug_html + \"\\u003Cli class=\\\"footer__infoBox-item\\\"\\u003E\\u003Ca class=\\\"button__text footer__infoBox-link\\\"\\u003E\" + (pug.escape(null == (pug_interp = item) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\\u003C\\u002Fli\\u003E\";\n    }\n  }\n}).call(this);\n\npug_html = pug_html + \"\\u003C\\u002Ful\\u003E\\u003C\\u002Fdiv\\u003E\\u003Cdiv class=\\\"footer__infoBox-column\\\"\\u003E \\u003Cdiv class=\\\"footer__infoBox-title\\\"\\u003E\" + (pug.escape(null == (pug_interp = 'about') ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003Cul class=\\\"footer__footer__infoBox-list\\\"\\u003E\";\n// iterate aboutItemList\n;(function(){\n  var $$obj = aboutItemList;\n  if ('number' == typeof $$obj.length) {\n      for (var pug_index5 = 0, $$l = $$obj.length; pug_index5 < $$l; pug_index5++) {\n        var item = $$obj[pug_index5];\npug_html = pug_html + \"\\u003Cli class=\\\"footer__infoBox-item\\\"\\u003E\\u003Ca class=\\\"button__text footer__infoBox-link\\\"\\u003E\" + (pug.escape(null == (pug_interp = item) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\\u003C\\u002Fli\\u003E\";\n      }\n  } else {\n    var $$l = 0;\n    for (var pug_index5 in $$obj) {\n      $$l++;\n      var item = $$obj[pug_index5];\npug_html = pug_html + \"\\u003Cli class=\\\"footer__infoBox-item\\\"\\u003E\\u003Ca class=\\\"button__text footer__infoBox-link\\\"\\u003E\" + (pug.escape(null == (pug_interp = item) ? \"\" : pug_interp)) + \"\\u003C\\u002Fa\\u003E\\u003C\\u002Fli\\u003E\";\n    }\n  }\n}).call(this);\n\npug_html = pug_html + \"\\u003C\\u002Ful\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fdiv\\u003E\";\nconst date = (new Date()).getFullYear()\npug_html = pug_html + \"\\u003Cdiv class=\\\"footer__bottom\\\"\\u003E\" + (pug.escape(null == (pug_interp = 'Copyright © '+date+'. Your company name  All rights reserved') ? \"\" : pug_interp)) + \"\\u003C\\u002Fdiv\\u003E\\u003C\\u002Ffooter\\u003E\";\n};\npug_mixins[\"button\"] = pug_interp = function(tag, style, text){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\nconst blockName = 'button';\nconst blockAttributes = {\n    class: [blockName]\n};\n\nif ((style)) {\n// iterate style.split(' ')\n;(function(){\n  var $$obj = style.split(' ');\n  if ('number' == typeof $$obj.length) {\n      for (var pug_index6 = 0, $$l = $$obj.length; pug_index6 < $$l; pug_index6++) {\n        var s = $$obj[pug_index6];\nblockAttributes.class.push(`${blockName}__${s}`)\n      }\n  } else {\n    var $$l = 0;\n    for (var pug_index6 in $$obj) {\n      $$l++;\n      var s = $$obj[pug_index6];\nblockAttributes.class.push(`${blockName}__${s}`)\n    }\n  }\n}).call(this);\n\npug_html = pug_html + \"\\u003C\" + (tag) + (pug.attrs(Object.assign({}, attributes, blockAttributes), true)) + \"\\u003E\" + (pug.escape(null == (pug_interp = text) ? \"\" : pug_interp)) + \"\\u003C\\u002F\" + (tag) + \"\\u003E\";\n}\n};\npug_mixins[\"input\"] = pug_interp = function(placeholder, style, type, btnText){\nvar block = (this && this.block), attributes = (this && this.attributes) || {};\nconst blockName = 'input';\nconst blockAttributes = {\n    class: [blockName]\n};\n\nif ((style)) {\n// iterate style.split(' ')\n;(function(){\n  var $$obj = style.split(' ');\n  if ('number' == typeof $$obj.length) {\n      for (var pug_index7 = 0, $$l = $$obj.length; pug_index7 < $$l; pug_index7++) {\n        var s = $$obj[pug_index7];\nblockAttributes.class.push(`${blockName}__${s}`)\n      }\n  } else {\n    var $$l = 0;\n    for (var pug_index7 in $$obj) {\n      $$l++;\n      var s = $$obj[pug_index7];\nblockAttributes.class.push(`${blockName}__${s}`)\n    }\n  }\n}).call(this);\n\n}\npug_html = pug_html + \"\\u003Cdiv class=\\\"input__wrap\\\"\\u003E \\u003Cinput\" + (pug.attrs(pug.merge([{\"type\": pug.escape(`${type}`),\"placeholder\": pug.escape(`${placeholder}`)},Object.assign({}, attributes, blockAttributes)]), true)) + \"\\u003E\";\nif ((type==='email')) {\npug_html = pug_html + \"\\u003Cbutton class=\\\"input__button\\\" type=\\\"submit\\\"\\u003E\" + (pug.escape(null == (pug_interp = btnText) ? \"\" : pug_interp)) + \"\\u003C\\u002Fbutton\\u003E\";\n}\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\";\n};\nconst itemList = ['home', 'shop', 'lookbook', 'features', 'pages', 'blog']\nconst caption = 'We earned a reputation of being good at what we do. Let us take your online shop to new dimension in success!';\nconst location = 'Comilla, Bangladesh 3500';\nconst email = 'kawsarahmed0210@gmail.com';\nconst phone = '01647470457';\nconst shopItemList = ['Shop', 'Collections', 'Outlet', 'Lookbook'];\nconst helpItemList = ['FAQ', 'Privecy Policy', 'Tearms and conditions', 'Return and Exchanges'];\nconst aboutItemList = ['Journal', 'Our Story', 'Contact', 'Store Location'];\n\nconst imgWomenGalleryPath = [\n    {\n        path: __webpack_require__(/*! ../src/img/womensFashion/women1.png */ \"./src/img/womensFashion/women1.png\"),\n        brand: 'igure',\n        caption: 'GREEN MUSCLE FIT POLO SHIRT',\n        price: '229.00',\n        sale: true,\n        newPrice: '129.00'\n    },\n    {\n        path: __webpack_require__(/*! ../src/img/womensFashion/women2.png */ \"./src/img/womensFashion/women2.png\"),\n        brand: 'igure',\n        caption: 'blue pretty SHIRT',\n        price: '389.00',\n        sale: true,\n        newPrice: '230.00'\n    },\n    {\n        path: __webpack_require__(/*! ../src/img/womensFashion/women3.png */ \"./src/img/womensFashion/women3.png\"),\n        brand: 'igure',\n        caption: 'red stripped shirt',\n        price: '240.00',\n        sale: true,\n        newPrice: '140.00'\n    },\n    {\n        path: __webpack_require__(/*! ../src/img/womensFashion/women4.png */ \"./src/img/womensFashion/women4.png\"),\n        brand: 'igure',\n        caption: 'black jeans jacket',\n        price: '699.00',\n        sale: true,\n        newPrice: '499.00'\n    }\n\n];\n\nconst imgManGalleryPath = [\n    {\n        path: __webpack_require__(/*! ../src/img/mensFashion/men1.svg */ \"./src/img/mensFashion/men1.svg\"),\n        brand: 'igure',\n        caption: 'nice shirt for nice guy',\n        price: '300.00',\n        sale: true,\n        newPrice: '499.00'\n    },\n    {\n        path: __webpack_require__(/*! ../src/img/mensFashion/men2.svg */ \"./src/img/mensFashion/men2.svg\"),\n        brand: 'igure',\n        caption: 'basic pink t-shirt',\n        price: '130.00',\n        sale: true,\n        newPrice: '99.00'\n    },\n    {\n        path: __webpack_require__(/*! ../src/img/mensFashion/men3.svg */ \"./src/img/mensFashion/men3.svg\"),\n        brand: 'igure',\n        caption: 'givenchy paris hoodie',\n        price: '790.00',\n        sale: true,\n        newPrice: '599.00'\n    },\n    {\n        path: __webpack_require__(/*! ../src/img/mensFashion/men4.svg */ \"./src/img/mensFashion/men4.svg\"),\n        brand: 'igure',\n        caption: 'peach hoodie',\n        price: '430.00',\n        sale: true,\n        newPrice: '299.00'\n    },\n]\n\npug_html = pug_html + \"\\u003C!DOCTYPE html\\u003E\\u003Chtml lang=\\\"en\\\"\\u003E\\u003Chead\\u003E\\u003Cmeta charset=\\\"UTF-8\\\"\\u003E\\u003Cmeta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\"\\u003E\\u003Cmeta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\"\\u003E\\u003Ctitle\\u003EFashion site\\u003C\\u002Ftitle\\u003E\\u003C\\u002Fhead\\u003E\\u003Cbody\\u003E \\u003Cdiv class=\\\"wrap\\\"\\u003E\";\npug_mixins[\"header\"](\n                    __webpack_require__(/*! ../../src/img/logo.svg */ \"./src/img/logo.svg\"),\n                    itemList\n                );\npug_mixins[\"heroSection\"](\n        __webpack_require__(/*! ../src/img/heroSection.png */ \"./src/img/heroSection.png\"),\n        'new trend', \n        'COLLUSION', \n        \"An exclusive selection of this season's trends.\", \n        'discover|shop now'\n    );\npug_html = pug_html + \"\\u003Cdiv class=\\\"container\\\"\\u003E\";\npug_mixins[\"catagory\"](\n            __webpack_require__(/*! ../src/img/catagory/catagory1.svg */ \"./src/img/catagory/catagory1.svg\"),\n            'catagory name1',\n            __webpack_require__(/*! ../src/img/catagory/catagory2.svg */ \"./src/img/catagory/catagory2.svg\"),\n            'catagory name2',\n            __webpack_require__(/*! ../src/img/catagory/catagory3.svg */ \"./src/img/catagory/catagory3.svg\"),\n            'catagory name3',\n            __webpack_require__(/*! ../src/img/catagory/catagory4.svg */ \"./src/img/catagory/catagory4.svg\"),\n            'catagory name4'\n        );\npug_mixins[\"sectionHead\"](\"women's fashion\", \"Shop our new arrivals from established brands\");\npug_html = pug_html + \"\\u003Cdiv class=\\\"gallery\\\"\\u003E\";\n// iterate imgWomenGalleryPath\n;(function(){\n  var $$obj = imgWomenGalleryPath;\n  if ('number' == typeof $$obj.length) {\n      for (var pug_index8 = 0, $$l = $$obj.length; pug_index8 < $$l; pug_index8++) {\n        var image = $$obj[pug_index8];\npug_mixins[\"card\"](\n                    image.path, \n                    image.brand, \n                    image.caption,\n                    image.price,\n                    image.sale,\n                    image.newPrice\n                );\n      }\n  } else {\n    var $$l = 0;\n    for (var pug_index8 in $$obj) {\n      $$l++;\n      var image = $$obj[pug_index8];\npug_mixins[\"card\"](\n                    image.path, \n                    image.brand, \n                    image.caption,\n                    image.price,\n                    image.sale,\n                    image.newPrice\n                );\n    }\n  }\n}).call(this);\n\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\";\npug_mixins[\"sectionHead\"](\"men's fashion\", \"Shop our new arrivals from established brands\");\npug_html = pug_html + \"\\u003Cdiv class=\\\"gallery\\\"\\u003E\";\n// iterate imgManGalleryPath\n;(function(){\n  var $$obj = imgManGalleryPath;\n  if ('number' == typeof $$obj.length) {\n      for (var pug_index9 = 0, $$l = $$obj.length; pug_index9 < $$l; pug_index9++) {\n        var image = $$obj[pug_index9];\npug_mixins[\"card\"](\n                    image.path, \n                    image.brand, \n                    image.caption,\n                    image.price,\n                    image.sale,\n                    image.newPrice\n                );\n      }\n  } else {\n    var $$l = 0;\n    for (var pug_index9 in $$obj) {\n      $$l++;\n      var image = $$obj[pug_index9];\npug_mixins[\"card\"](\n                    image.path, \n                    image.brand, \n                    image.caption,\n                    image.price,\n                    image.sale,\n                    image.newPrice\n                );\n    }\n  }\n}).call(this);\n\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\";\npug_mixins[\"sectionHead\"](\"avone styles\", \"Choose Your Favorite Color\");\npug_mixins[\"avone\"](\n            __webpack_require__(/*! ../src/img/avone/avone1.png */ \"./src/img/avone/avone1.png\"),\n            __webpack_require__(/*! ../src/img/avone/avone2.png */ \"./src/img/avone/avone2.png\"),\n            __webpack_require__(/*! ../src/img/womensFashion/women1.png */ \"./src/img/womensFashion/women1.png\")\n        );\npug_html = pug_html + \"\\u003C\\u002Fdiv\\u003E\";\npug_mixins[\"bottomSection\"](\n        __webpack_require__(/*! ../src/img/tachen.png */ \"./src/img/tachen.png\"),\n        'OWN THE DAY',\n        'tachen 19',\n        '',\n        'shop collection'\n    );\npug_mixins[\"footer\"](\n                    __webpack_require__(/*! ../../src/img/logo.svg */ \"./src/img/logo.svg\"),\n                    caption,\n                    location,\n                    email,\n                    phone,\n                    shopItemList,\n                    helpItemList,\n                    aboutItemList\n                );\npug_html = pug_html + \"\\u003Cscript src=\\\"..\\u002Fscript.js\\\"\\u003E \\u003C\\u002Fscript\\u003E\\u003C\\u002Fdiv\\u003E\\u003C\\u002Fbody\\u003E\\u003C\\u002Fhtml\\u003E\";}.call(this,\"Date\" in locals_for_with?locals_for_with.Date:typeof Date!==\"undefined\"?Date:undefined,\"Object\" in locals_for_with?locals_for_with.Object:typeof Object!==\"undefined\"?Object:undefined));;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack://practice/./src/index.pug?");
+
+/***/ }),
+
+/***/ "./node_modules/pug-runtime/index.js":
+/*!*******************************************!*\
+  !*** ./node_modules/pug-runtime/index.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nvar pug_has_own_property = Object.prototype.hasOwnProperty;\n\n/**\n * Merge two attribute objects giving precedence\n * to values in object `b`. Classes are special-cased\n * allowing for arrays and merging/joining appropriately\n * resulting in a string.\n *\n * @param {Object} a\n * @param {Object} b\n * @return {Object} a\n * @api private\n */\n\nexports.merge = pug_merge;\nfunction pug_merge(a, b) {\n  if (arguments.length === 1) {\n    var attrs = a[0];\n    for (var i = 1; i < a.length; i++) {\n      attrs = pug_merge(attrs, a[i]);\n    }\n    return attrs;\n  }\n\n  for (var key in b) {\n    if (key === 'class') {\n      var valA = a[key] || [];\n      a[key] = (Array.isArray(valA) ? valA : [valA]).concat(b[key] || []);\n    } else if (key === 'style') {\n      var valA = pug_style(a[key]);\n      valA = valA && valA[valA.length - 1] !== ';' ? valA + ';' : valA;\n      var valB = pug_style(b[key]);\n      valB = valB && valB[valB.length - 1] !== ';' ? valB + ';' : valB;\n      a[key] = valA + valB;\n    } else {\n      a[key] = b[key];\n    }\n  }\n\n  return a;\n};\n\n/**\n * Process array, object, or string as a string of classes delimited by a space.\n *\n * If `val` is an array, all members of it and its subarrays are counted as\n * classes. If `escaping` is an array, then whether or not the item in `val` is\n * escaped depends on the corresponding item in `escaping`. If `escaping` is\n * not an array, no escaping is done.\n *\n * If `val` is an object, all the keys whose value is truthy are counted as\n * classes. No escaping is done.\n *\n * If `val` is a string, it is counted as a class. No escaping is done.\n *\n * @param {(Array.<string>|Object.<string, boolean>|string)} val\n * @param {?Array.<string>} escaping\n * @return {String}\n */\nexports.classes = pug_classes;\nfunction pug_classes_array(val, escaping) {\n  var classString = '', className, padding = '', escapeEnabled = Array.isArray(escaping);\n  for (var i = 0; i < val.length; i++) {\n    className = pug_classes(val[i]);\n    if (!className) continue;\n    escapeEnabled && escaping[i] && (className = pug_escape(className));\n    classString = classString + padding + className;\n    padding = ' ';\n  }\n  return classString;\n}\nfunction pug_classes_object(val) {\n  var classString = '', padding = '';\n  for (var key in val) {\n    if (key && val[key] && pug_has_own_property.call(val, key)) {\n      classString = classString + padding + key;\n      padding = ' ';\n    }\n  }\n  return classString;\n}\nfunction pug_classes(val, escaping) {\n  if (Array.isArray(val)) {\n    return pug_classes_array(val, escaping);\n  } else if (val && typeof val === 'object') {\n    return pug_classes_object(val);\n  } else {\n    return val || '';\n  }\n}\n\n/**\n * Convert object or string to a string of CSS styles delimited by a semicolon.\n *\n * @param {(Object.<string, string>|string)} val\n * @return {String}\n */\n\nexports.style = pug_style;\nfunction pug_style(val) {\n  if (!val) return '';\n  if (typeof val === 'object') {\n    var out = '';\n    for (var style in val) {\n      /* istanbul ignore else */\n      if (pug_has_own_property.call(val, style)) {\n        out = out + style + ':' + val[style] + ';';\n      }\n    }\n    return out;\n  } else {\n    return val + '';\n  }\n};\n\n/**\n * Render the given attribute.\n *\n * @param {String} key\n * @param {String} val\n * @param {Boolean} escaped\n * @param {Boolean} terse\n * @return {String}\n */\nexports.attr = pug_attr;\nfunction pug_attr(key, val, escaped, terse) {\n  if (val === false || val == null || !val && (key === 'class' || key === 'style')) {\n    return '';\n  }\n  if (val === true) {\n    return ' ' + (terse ? key : key + '=\"' + key + '\"');\n  }\n  var type = typeof val;\n  if ((type === 'object' || type === 'function') && typeof val.toJSON === 'function') {\n    val = val.toJSON();\n  }\n  if (typeof val !== 'string') {\n    val = JSON.stringify(val);\n    if (!escaped && val.indexOf('\"') !== -1) {\n      return ' ' + key + '=\\'' + val.replace(/'/g, '&#39;') + '\\'';\n    }\n  }\n  if (escaped) val = pug_escape(val);\n  return ' ' + key + '=\"' + val + '\"';\n};\n\n/**\n * Render the given attributes object.\n *\n * @param {Object} obj\n * @param {Object} terse whether to use HTML5 terse boolean attributes\n * @return {String}\n */\nexports.attrs = pug_attrs;\nfunction pug_attrs(obj, terse){\n  var attrs = '';\n\n  for (var key in obj) {\n    if (pug_has_own_property.call(obj, key)) {\n      var val = obj[key];\n\n      if ('class' === key) {\n        val = pug_classes(val);\n        attrs = pug_attr(key, val, false, terse) + attrs;\n        continue;\n      }\n      if ('style' === key) {\n        val = pug_style(val);\n      }\n      attrs += pug_attr(key, val, false, terse);\n    }\n  }\n\n  return attrs;\n};\n\n/**\n * Escape the given string of `html`.\n *\n * @param {String} html\n * @return {String}\n * @api private\n */\n\nvar pug_match_html = /[\"&<>]/;\nexports.escape = pug_escape;\nfunction pug_escape(_html){\n  var html = '' + _html;\n  var regexResult = pug_match_html.exec(html);\n  if (!regexResult) return _html;\n\n  var result = '';\n  var i, lastIndex, escape;\n  for (i = regexResult.index, lastIndex = 0; i < html.length; i++) {\n    switch (html.charCodeAt(i)) {\n      case 34: escape = '&quot;'; break;\n      case 38: escape = '&amp;'; break;\n      case 60: escape = '&lt;'; break;\n      case 62: escape = '&gt;'; break;\n      default: continue;\n    }\n    if (lastIndex !== i) result += html.substring(lastIndex, i);\n    lastIndex = i + 1;\n    result += escape;\n  }\n  if (lastIndex !== i) return result + html.substring(lastIndex, i);\n  else return result;\n};\n\n/**\n * Re-throw the given `err` in context to the\n * the pug in `filename` at the given `lineno`.\n *\n * @param {Error} err\n * @param {String} filename\n * @param {String} lineno\n * @param {String} str original source\n * @api private\n */\n\nexports.rethrow = pug_rethrow;\nfunction pug_rethrow(err, filename, lineno, str){\n  if (!(err instanceof Error)) throw err;\n  if ((typeof window != 'undefined' || !filename) && !str) {\n    err.message += ' on line ' + lineno;\n    throw err;\n  }\n  try {\n    str = str || (__webpack_require__(/*! fs */ \"?8f63\").readFileSync)(filename, 'utf8')\n  } catch (ex) {\n    pug_rethrow(err, null, lineno)\n  }\n  var context = 3\n    , lines = str.split('\\n')\n    , start = Math.max(lineno - context, 0)\n    , end = Math.min(lines.length, lineno + context);\n\n  // Error context\n  var context = lines.slice(start, end).map(function(line, i){\n    var curr = i + start + 1;\n    return (curr == lineno ? '  > ' : '    ')\n      + curr\n      + '| '\n      + line;\n  }).join('\\n');\n\n  // Alter exception message\n  err.path = filename;\n  err.message = (filename || 'Pug') + ':' + lineno\n    + '\\n' + context + '\\n\\n' + err.message;\n  throw err;\n};\n\n\n//# sourceURL=webpack://practice/./node_modules/pug-runtime/index.js?");
+
+/***/ }),
+
+/***/ "./src/img/avone/avone1.png":
+/*!**********************************!*\
+  !*** ./src/img/avone/avone1.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/134ab900dfde90c41e5e.png\";\n\n//# sourceURL=webpack://practice/./src/img/avone/avone1.png?");
+
+/***/ }),
+
+/***/ "./src/img/avone/avone2.png":
+/*!**********************************!*\
+  !*** ./src/img/avone/avone2.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/953180d1a2dcce9a75e6.png\";\n\n//# sourceURL=webpack://practice/./src/img/avone/avone2.png?");
+
+/***/ }),
+
+/***/ "./src/img/catagory/catagory1.svg":
+/*!****************************************!*\
+  !*** ./src/img/catagory/catagory1.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/9c23c54ede11c909cd12.svg\";\n\n//# sourceURL=webpack://practice/./src/img/catagory/catagory1.svg?");
+
+/***/ }),
+
+/***/ "./src/img/catagory/catagory2.svg":
+/*!****************************************!*\
+  !*** ./src/img/catagory/catagory2.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/b435ea145031e8a9fb31.svg\";\n\n//# sourceURL=webpack://practice/./src/img/catagory/catagory2.svg?");
+
+/***/ }),
+
+/***/ "./src/img/catagory/catagory3.svg":
+/*!****************************************!*\
+  !*** ./src/img/catagory/catagory3.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/2130e4b0f94cfadf1abf.svg\";\n\n//# sourceURL=webpack://practice/./src/img/catagory/catagory3.svg?");
+
+/***/ }),
+
+/***/ "./src/img/catagory/catagory4.svg":
+/*!****************************************!*\
+  !*** ./src/img/catagory/catagory4.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/f73c5a45a13f60c8bbd3.svg\";\n\n//# sourceURL=webpack://practice/./src/img/catagory/catagory4.svg?");
+
+/***/ }),
+
+/***/ "./src/img/heroSection.png":
+/*!*********************************!*\
+  !*** ./src/img/heroSection.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/2a647f9fda0fd1554702.png\";\n\n//# sourceURL=webpack://practice/./src/img/heroSection.png?");
+
+/***/ }),
+
+/***/ "./src/img/logo.svg":
+/*!**************************!*\
+  !*** ./src/img/logo.svg ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/41e534c9bfcab4b68e4a.svg\";\n\n//# sourceURL=webpack://practice/./src/img/logo.svg?");
+
+/***/ }),
+
+/***/ "./src/img/mensFashion/men1.svg":
+/*!**************************************!*\
+  !*** ./src/img/mensFashion/men1.svg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/0bc08cdf7f5eb50ac963.svg\";\n\n//# sourceURL=webpack://practice/./src/img/mensFashion/men1.svg?");
+
+/***/ }),
+
+/***/ "./src/img/mensFashion/men2.svg":
+/*!**************************************!*\
+  !*** ./src/img/mensFashion/men2.svg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/ad1b18ebe320b11a1b66.svg\";\n\n//# sourceURL=webpack://practice/./src/img/mensFashion/men2.svg?");
+
+/***/ }),
+
+/***/ "./src/img/mensFashion/men3.svg":
+/*!**************************************!*\
+  !*** ./src/img/mensFashion/men3.svg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/91316e1f28f575265ba8.svg\";\n\n//# sourceURL=webpack://practice/./src/img/mensFashion/men3.svg?");
+
+/***/ }),
+
+/***/ "./src/img/mensFashion/men4.svg":
+/*!**************************************!*\
+  !*** ./src/img/mensFashion/men4.svg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/330aea3965c33c525312.svg\";\n\n//# sourceURL=webpack://practice/./src/img/mensFashion/men4.svg?");
+
+/***/ }),
+
+/***/ "./src/img/tachen.png":
+/*!****************************!*\
+  !*** ./src/img/tachen.png ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/9072ffcf1884662b8f04.png\";\n\n//# sourceURL=webpack://practice/./src/img/tachen.png?");
+
+/***/ }),
+
+/***/ "./src/img/womensFashion/women1.png":
+/*!******************************************!*\
+  !*** ./src/img/womensFashion/women1.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/78dc57b4ce293cfec53c.png\";\n\n//# sourceURL=webpack://practice/./src/img/womensFashion/women1.png?");
+
+/***/ }),
+
+/***/ "./src/img/womensFashion/women2.png":
+/*!******************************************!*\
+  !*** ./src/img/womensFashion/women2.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/212c67f55e08f63e3ddf.png\";\n\n//# sourceURL=webpack://practice/./src/img/womensFashion/women2.png?");
+
+/***/ }),
+
+/***/ "./src/img/womensFashion/women3.png":
+/*!******************************************!*\
+  !*** ./src/img/womensFashion/women3.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/72be48c961aaf4ca6ea3.png\";\n\n//# sourceURL=webpack://practice/./src/img/womensFashion/women3.png?");
+
+/***/ }),
+
+/***/ "./src/img/womensFashion/women4.png":
+/*!******************************************!*\
+  !*** ./src/img/womensFashion/women4.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"img/bdb9c42adad7c267d52a.png\";\n\n//# sourceURL=webpack://practice/./src/img/womensFashion/women4.png?");
+
+/***/ }),
+
+/***/ "?8f63":
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/***/ (() => {
+
+eval("/* (ignored) */\n\n//# sourceURL=webpack://practice/fs_(ignored)?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
+/******/ })()
+;
